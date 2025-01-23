@@ -1,7 +1,7 @@
 [user]
     name = dewei.ma
     email = xnmageis@outlook.com
-	signingkey = 23B68B6F20399002
+	signingkey = 1031458D
 [core]
     pager = delta
     editor = nvim
