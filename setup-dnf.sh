@@ -21,7 +21,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     gnupg goldendict guake highlight httpie i3 i3lock i3status inkscape jq keepass \
     keepassxc lazygit libxml2 make mousepad neovim nnn nodejs npm openssl p7zip \
     pandoc pdfarranger picard picom poppler remmina ripgrep rofi shellcheck shfmt \
-    shotcut thunderbird tilix tmux vifm vlc wireshark yamllint yarnpkg zoxide zsh \
+    shotcut thunderbird tilix tmux vlc wireshark yamllint yarnpkg zoxide zsh \
     GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
     NetworkManager rxvt-unicode azote dunst htop thunar snapd hyprland hyprland-devel \
     fio hdparm wabt wike secrets foliate sway ghostty foot openssl-devel
@@ -42,7 +42,7 @@ flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.dr
     org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
     org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
     io.gitlab.news_flash.NewsFlash org.gnome.gitlab.somas.Apostrophe \
-    com.mongodb.Compass org.wezfurlong.wezterm
+    com.mongodb.Compass
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub com.usebottles.bottles com.google.Chrome \

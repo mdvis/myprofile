@@ -16,7 +16,7 @@ brew install btop cmake ctags fastfetch fd ffmpeg ffmpegthumbnailer zsh wabt \
     font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc gpg grex hadolint \
     highlight htop imagemagick jq lazygit libxml2 localsend make mkcert neovim \
     nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy sevenzip \
-    shellcheck shfmt the_silver_searcher tmux tree vifm yamllint zoxide
+    shellcheck shfmt the_silver_searcher tmux tree yamllint zoxide
 
 brew install --cask alt-tab another-redis-desktop-manager audacity ghostty windterm \
     balenaetcher blender calibre charles cryptomator dbeaver-community docker \
@@ -25,4 +25,4 @@ brew install --cask alt-tab another-redis-desktop-manager audacity ghostty windt
     keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire thor \
     obsidian pika postman rectangle sfm shotcut shottr skim stretchly wireshark \
-    switchhosts syntax-highlight textmate visual-studio-code wezterm
+    switchhosts syntax-highlight textmate visual-studio-code
