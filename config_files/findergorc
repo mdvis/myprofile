@@ -1,1 +1,1 @@
-defaults write com.onmyway133.FinderGo terminal kitty
+defaults write com.onmyway133.FinderGo terminal ghostty
