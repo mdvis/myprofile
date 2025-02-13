@@ -22,7 +22,5 @@ error() {
     exit 1
 }
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh || error "Failed to install rust"
-curl -LsSf https://astral.sh/uv/install.sh | sh || error "Failed to install uv"
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh || error "Failed to install zim"
 curl -sS https://starship.rs/install.sh | sh || error "Failed to install starship"
