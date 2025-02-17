@@ -10,8 +10,8 @@ return {
     -- color_scheme = "terafox",
 
     font = wezterm.font_with_fallback({
-        -- "SauceCodePro Nerd Font",
-        "CartographCF Nerd Font Mono",
+        "SauceCodePro Nerd Font",
+        -- "CartographCF Nerd Font Mono",
         "Source Han Sans SC",
     }),
 
