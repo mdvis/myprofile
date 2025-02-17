@@ -25,4 +25,4 @@ brew install --cask alt-tab another-redis-desktop-manager audacity ghostty windt
     keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire thor \
     obsidian pika postman rectangle sfm shotcut shottr skim stretchly wireshark \
-    switchhosts syntax-highlight textmate visual-studio-code
+    switchhosts syntax-highlight textmate visual-studio-code wezterm
