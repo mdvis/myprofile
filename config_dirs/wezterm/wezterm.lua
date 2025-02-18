@@ -17,7 +17,7 @@ return {
 
     font_size = 14.0,
 
-    default_prog = { home .. "/.local/bin/zellij" },
+    default_prog = { home .. "/.local/bin/zsh" },
 
     enable_tab_bar = false,
 }
