@@ -20,4 +20,7 @@ return {
     default_prog = { home .. "/.local/bin/zsh" },
 
     enable_tab_bar = false,
+
+    initial_cols = 140,
+    initial_rows = 40,
 }
