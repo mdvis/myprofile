@@ -25,7 +25,7 @@ sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker
     GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
     NetworkManager rxvt-unicode azote dunst htop thunar snapd hyprland hyprland-devel \
     fio hdparm wabt wike secrets foliate sway ghostty foot openssl-devel python-devel \
-    gcc-c++ golang rust cargo rustup uv
+    gcc-c++ golang rust cargo rustup uv git-lfs
 
 # fcitx5
 sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
