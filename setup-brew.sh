@@ -21,9 +21,10 @@ brew install btop cmake ctags fastfetch fd ffmpeg ffmpegthumbnailer zsh wabt \
 
 brew install --cask alt-tab another-redis-desktop-manager audacity ghostty thor \
     balenaetcher blender calibre charles cryptomator dbeaver-community docker \
-    drawio espanso findergo flameshot flux freeplane gimp gitx goldendict xld \
+    drawio espanso flameshot flux freeplane gimp gitx goldendict xld textmate \
     google-chrome handbrake httpie inkscape jordanbaird-ice kap keepassxc vlc \
     keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass wezterm \
     microsoft-onenote mongodb-compass motrix musicbrainz-picard netnewswire skim \
     obsidian postman rectangle sfm shotcut shottr stretchly wireshark windterm \
-    switchhosts syntax-highlight textmate visual-studio-code pika
+    switchhosts syntax-highlight visual-studio-code openinterminal-lite pika \
+    openineditor-lite
