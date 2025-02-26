@@ -46,13 +46,14 @@ flatpak install flathub \
     io.dbeaver.DBeaverCommunity com.tencent.WeChat \
     org.freefilesync.FreeFileSync org.freeplane.App \
     io.github.alainm23.planify md.obsidian.Obsidian \
-    io.gitlab.news_flash.NewsFlash com.mongodb.Compass \
+    io.gitlab.news_flash.NewsFlash org.freecad.FreeCAD \
     org.gnome.gitlab.somas.Apostrophe org.freac.freac \
-    org.wezfurlong.wezterm org.freecad.FreeCAD
+    org.wezfurlong.wezterm
 
 if [ "$ARCH" = "$AMD64" ]; then
     flatpak install flathub \
-        com.usebottles.bottles com.google.Chrome com.wps.Office
+        com.usebottles.bottles com.google.Chrome com.mongodb.Compass \
+        com.wps.Office
 fi
 
 # snapcraft
