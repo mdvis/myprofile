@@ -12,38 +12,46 @@ set -o pipefail
 ARCH="$(uname -m)"
 AMD64="x86_64"
 
-sudo apt install -y aria2 audacity blender btop++ calibre cmake copyq exuberant-ctags docker.io \
-    fd-find feh ffmpeg ffmpegthumbnailer filezilla flameshot fzf build-essential gimp git git-cola \
-    gnupg2 goldendict guake highlight httpie i3 i3lock-fancy i3status inkscape jq keepass2 \
-    keepassxc lazygit libxml2-dev make mousepad neovim nnn nodejs npm openssl p7zip-full \
-    pandoc pdfarranger picard picom poppler-utils remmina ripgrep rofi shellcheck shfmt \
-    shotcut thunderbird tilix tmux vlc wireshark yamllint yarnpkg zoxide zsh \
-    graphicsmagick imagemagick silversearcher-ag libnss3-tools hadolint rust-analyzer \
-    network-manager rxvt-unicode-256color azote dunst htop thunar snapd hyprland hyprland-dev \
-    fio hdparm wabt wike secrets foliate sway ghostty foot libssl-dev python3-dev \
-    g++ golang-go rustc cargo rustup-init libuv1-dev git-lfs
+sudo apt install -y \
+    aria2 audacity blender btop++ calibre cmake copyq exuberant-ctags git-cola \
+    shotcut thunderbird tilix vlc wireshark yamllint yarnpkg zoxide zsh jq g++ \
+    fd-find feh ffmpeg ffmpegthumbnailer filezilla flameshot fzf git docker.io \
+    gnupg2 goldendict guake highlight httpie i3 i3lock-fancy i3status inkscape \
+    keepassxc lazygit libxml2-dev make mousepad neovim nnn nodejs rofi openssl \
+    pandoc pdfarranger picard picom poppler-utils remmina shellcheck shfmt fio \
+    imagemagick silversearcher-ag libnss3-tools hadolint rust-analyzer secrets \
+    tmux golang-go rustc hdparm rustup-init libuv1-dev git-lfs build-essential \
+    gimp keepass2 p7zip-full npm rxvt-unicode-256color foot libssl-dev ghostty \
+    network-manager azote dunst htop snapd foliate hyprland hyprland-dev cargo \
+    graphicsmagick ripgrep wabt wike thunar sway python3-dev
 
 # fcitx5
-sudo apt install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
-    fcitx5-configtool fcitx5-qt
+sudo apt install -y \
+    imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons fcitx5-qt \
+    fcitx5-configtool
 
 # dependencies
 # clash
-sudo apt install -y libayatana-appindicator-gtk3 libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
+sudo apt install -y \
+    libayatana-appindicator-gtk3 libwebkit2gtk-4.0-37 libwebkit2gtk-4.0-dev
 
 # flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
-    org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
-    org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
-    org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
-    io.gitlab.news_flash.NewsFlash org.gnome.gitlab.somas.Apostrophe org.wezfurlong.wezterm \
-    com.mongodb.Compass
+flatpak install flathub \
+    net.hovancik.Stretchly org.wezfurlong.wezterm \
+    com.visualstudio.code com.jgraph.drawio.desktop \
+    md.obsidian.Obsidian io.github.alainm23.planify \
+    com.mongodb.Compass org.localsend.localsend_app \
+    net.agalwood.Motrix io.dbeaver.DBeaverCommunity \
+    org.freecad.FreeCAD org.cryptomator.Cryptomator \
+    com.tencent.WeChat org.freefilesync.FreeFileSync \
+    org.freeplane.App io.gitlab.news_flash.NewsFlash \
+    org.gnome.gitlab.somas.Apostrophe org.freac.freac
 
 if [ "$ARCH" = "$AMD64" ]; then
-    flatpak install flathub com.usebottles.bottles com.google.Chrome \
-        com.wps.Office
+    flatpak install flathub \
+        com.usebottles.bottles com.google.Chrome com.wps.Office
 fi
 
 # snapcraft

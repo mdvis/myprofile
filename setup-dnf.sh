@@ -15,20 +15,22 @@ AMD64="x86_64"
 sudo dnf copr enable atim/lazygit -y
 sudo dnf copr enable pgdev/ghostty -y
 
-sudo dnf install -y aria2 audacity blender btop calibre cmake copyq ctags docker \
-    fd-find feh ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola \
-    gnupg goldendict guake highlight httpie i3 i3lock i3status inkscape jq keepass \
-    keepassxc lazygit libxml2 make mousepad neovim nnn nodejs npm openssl p7zip \
-    pandoc pdfarranger picard picom poppler remmina ripgrep rofi shellcheck shfmt \
-    shotcut thunderbird tilix tmux vlc wireshark yamllint yarnpkg zoxide zsh \
-    GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint rust-analyzer \
-    NetworkManager rxvt-unicode azote dunst htop thunar snapd hyprland hyprland-devel \
-    fio hdparm wabt wike secrets foliate sway ghostty foot openssl-devel python-devel \
-    gcc-c++ golang rust cargo rustup uv git-lfs
+sudo dnf install -y \
+    aria2 audacity blender btop calibre cmake copyq ctags docker fd-find p7zip \
+    ffmpeg-free ffmpegthumbs filezilla flameshot fzf gcc gimp git git-cola feh \
+    gnupg goldendict guake highlight httpie i3 i3lock i3status inkscape jq npm \
+    keepassxc lazygit libxml2 make mousepad neovim rofi nodejs openssl keepass \
+    pandoc pdfarranger picard picom poppler remmina ripgrep shellcheck zsh nnn \
+    shotcut thunderbird tilix tmux vlc wireshark yamllint yarnpkg zoxide shfmt \
+    GraphicsMagick ImageMagick the_silver_searcher nss-tools hadolint hyprland \
+    NetworkManager rxvt-unicode azote dunst htop thunar hyprland-devel git-lfs \
+    fio hdparm wabt wike secrets foliate sway ghostty foot openssl-devel snapd \
+    gcc-c++ golang rust cargo rustup uv rust-analyzer python-devel
 
 # fcitx5
-sudo dnf install -y imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons \
-    fcitx5-configtool fcitx5-qt
+sudo dnf install -y \
+    imsettings fcitx5-table-extra fcitx5 fcitx5-chinese-addons fcitx5-qt \
+    fcitx5-configtool
 
 # dependencies
 # clash
@@ -37,16 +39,20 @@ sudo dnf install -y libayatana-appindicator-gtk3 webkit2gtk4.0
 # flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install flathub md.obsidian.Obsidian com.visualstudio.code com.jgraph.drawio.desktop \
-    org.localsend.localsend_app net.hovancik.Stretchly org.freac.freac net.agalwood.Motrix \
-    org.cryptomator.Cryptomator io.dbeaver.DBeaverCommunity org.freefilesync.FreeFileSync \
-    org.freeplane.App org.freecad.FreeCAD com.tencent.WeChat io.github.alainm23.planify \
-    io.gitlab.news_flash.NewsFlash org.gnome.gitlab.somas.Apostrophe org.wezfurlong.wezterm \
-    com.mongodb.Compass
+flatpak install flathub \
+    com.jgraph.drawio.desktop net.hovancik.Stretchly \
+    org.localsend.localsend_app net.agalwood.Motrix \
+    org.cryptomator.Cryptomator com.visualstudio.code \
+    io.dbeaver.DBeaverCommunity com.tencent.WeChat \
+    org.freefilesync.FreeFileSync org.freeplane.App \
+    io.github.alainm23.planify md.obsidian.Obsidian \
+    io.gitlab.news_flash.NewsFlash com.mongodb.Compass \
+    org.gnome.gitlab.somas.Apostrophe org.freac.freac \
+    org.wezfurlong.wezterm org.freecad.FreeCAD
 
 if [ "$ARCH" = "$AMD64" ]; then
-    flatpak install flathub com.usebottles.bottles com.google.Chrome \
-        com.wps.Office
+    flatpak install flathub \
+        com.usebottles.bottles com.google.Chrome com.wps.Office
 fi
 
 # snapcraft
