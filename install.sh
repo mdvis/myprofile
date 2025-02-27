@@ -153,6 +153,10 @@ install_cargo() {
     success "Cargo done!"
 }
 
+syncRepo "$APP_PATH" "$APP_REPO_URI"
+
+cd "$APP_PATH" || exit
+
 command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
 command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
@@ -167,10 +171,6 @@ command -v curl &>/dev/null || error "No curl!"
 command -v pip3 &>/dev/null || error "No pip3!"
 command -v cargo &>/dev/null || error "No cargo!"
 command -v fc-cache &>/dev/null || error "No fc-cache!"
-
-syncRepo "$APP_PATH" "$APP_REPO_URI"
-
-cd "$APP_PATH" || exit
 
 install_fonts
 install_npm
