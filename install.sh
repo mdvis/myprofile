@@ -109,7 +109,7 @@ syncRepo() {
         mkdir -p "$repo_path"
         git clone --depth 1 "$repo_uri" "$repo_path"
     else
-        cd "$repo_path" && git pull origin main && git reset --hard origin/main
+        cd "$repo_path" && git fetch origin && git reset --hard origin/main
     fi
 
     name=$(basename "${repo_uri%.git}")
