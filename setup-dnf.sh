@@ -57,7 +57,7 @@ if [ "$ARCH" = "$AMD64" ]; then
 fi
 
 # snapcraft
-sudo ln -s /var/lib/snapd/snap /snap
+sudo ln -sf /var/lib/snapd/snap /snap
 sudo snap install scrcpy
 
 if [ "$ARCH" = "$AMD64" ]; then

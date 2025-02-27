@@ -153,6 +153,14 @@ install_cargo() {
     success "Cargo done!"
 }
 
+command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
+command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
+command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
+command -v pacman &>/dev/null &&
+    command -v pacman &>/dev/null &&
+    "${APP_PATH}/setup-arch.sh"
+
+command -v zsh &>/dev/null || error "No zsh!"
 command -v npm &>/dev/null || error "No npm!"
 command -v git &>/dev/null || error "No git!"
 command -v curl &>/dev/null || error "No curl!"
@@ -168,6 +176,9 @@ install_fonts
 install_npm
 install_pip
 install_cargo
+
+curl -sS https://starship.rs/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 handler "$APP_SSH_PATH" "$SSH_PATH" "f" || error "Failed to link ssh!"
 handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f" || error "Failed to link tools!"
