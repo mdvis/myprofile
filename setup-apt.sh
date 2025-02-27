@@ -13,17 +13,18 @@ ARCH="$(uname -m)"
 AMD64="x86_64"
 
 sudo apt install -y \
-    aria2 audacity blender btop++ calibre cmake copyq exuberant-ctags git-cola \
+    aria2 audacity blender calibre cmake copyq exuberant-ctags git-cola thunar \
     shotcut thunderbird tilix vlc wireshark yamllint yarnpkg zoxide zsh jq g++ \
     fd-find feh ffmpeg ffmpegthumbnailer filezilla flameshot fzf git docker.io \
     gnupg2 goldendict guake highlight httpie i3 i3lock-fancy i3status inkscape \
-    keepassxc lazygit libxml2-dev make mousepad neovim nnn nodejs rofi openssl \
+    keepassxc libxml2-dev make mousepad neovim nnn nodejs rofi openssl ripgrep \
     pandoc pdfarranger picard picom poppler-utils remmina shellcheck shfmt fio \
-    imagemagick silversearcher-ag libnss3-tools hadolint rust-analyzer secrets \
-    tmux golang-go rustc hdparm rustup-init libuv1-dev git-lfs build-essential \
-    gimp keepass2 p7zip-full npm rxvt-unicode-256color foot libssl-dev ghostty \
-    network-manager azote dunst htop snapd foliate hyprland hyprland-dev cargo \
-    graphicsmagick ripgrep wabt wike thunar sway python3-dev
+    tmux golang-go rustc hdparm libuv1-dev git-lfs build-essential imagemagick \
+    keepass2 p7zip-full npm rxvt-unicode libssl-dev graphicsmagick python3-dev \
+    network-manager dunst htop snapd foliate cargo secrets btop wabt sway foot \
+    silversearcher-ag libnss3-tools wike gimp
+
+# hadolint lazygit rustup  azote hyprland hyprland-dev rust-analyzer
 
 # fcitx5
 sudo apt install -y \
@@ -56,7 +57,7 @@ fi
 
 # snapcraft
 sudo ln -sf /var/lib/snapd/snap /snap
-sudo snap install scrcpy
+sudo snap install scrcpy ghostty
 
 if [ "$ARCH" = "$AMD64" ]; then
     sudo snap install another-redis-desktop-manager
