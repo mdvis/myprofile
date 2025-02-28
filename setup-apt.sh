@@ -60,6 +60,6 @@ sudo ln -sf /var/lib/snapd/snap /snap
 sudo snap install scrcpy ghostty
 
 if [ "$ARCH" = "$AMD64" ]; then
-    sudo snap install another-redis-desktop-manager
-    sudo snap install simplescreenrecorder
+    sudo snap install another-redis-desktop-manager simplescreenrecorder \
+        logisim-evolution
 fi
