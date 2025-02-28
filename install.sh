@@ -141,7 +141,8 @@ install_npm() {
 }
 
 install_pip() {
-    pip3 install --break-system-packages --user jedi neovim pynvim ruff sqlfluff vim-vint
+    pip3 install --break-system-packages --user ruff posting sqlfluff vim-vint \
+        jedi neovim pynvim
 
     success "Pip done!"
 }
