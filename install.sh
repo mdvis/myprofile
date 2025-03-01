@@ -141,7 +141,7 @@ install_npm() {
 }
 
 install_pip() {
-    pip3 install --break-system-packages --user ruff posting sqlfluff vim-vint \
+    pip3 install --break-system-packages --user ruff sqlfluff vim-vint \
         jedi neovim pynvim
 
     success "Pip done!"
@@ -180,6 +180,7 @@ install_cargo
 
 curl -sS https://starship.rs/install.sh | sh
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 handler "$APP_SSH_PATH" "$SSH_PATH" "f" || error "Failed to link ssh!"
 handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f" || error "Failed to link tools!"

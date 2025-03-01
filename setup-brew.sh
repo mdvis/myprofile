@@ -13,10 +13,10 @@ brew tap macos-fuse-t/homebrew-cask
 
 brew install \
     highlight htop imagemagick jq lazygit libxml2 make mkcert neovim \
-    shellcheck shfmt the_silver_searcher tree yamllint zoxide mono-mdk git-lfs \
+    shellcheck shfmt the_silver_searcher tree yamllint zoxide git-lfs \
     nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy cmake \
-    btop tmux ctags fastfetch fd ffmpeg ffmpegthumbnailer zsh hadolintsevenzip \
-    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc gpg grex wabt
+    btop tmux ctags fastfetch fd ffmpeg ffmpegthumbnailer zsh hadolint sevenzip \
+    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc gpg grex wabt rust
     
 
 brew install --cask \
@@ -25,7 +25,7 @@ brew install --cask \
     mongodb-compass musicbrainz-picard netnewswire skim pika \
     switchhosts syntax-highlight visual-studio-code openinterminal-lite motrix \
     balenaetcher blender charles cryptomator dbeaver-community orbstack httpie \
-    drawio espanso flameshot flux freeplane gimp gitx goldendict thor textmate \
+    drawio espanso flameshot flux freeplane gimp gitx thor textmate \
     google-chrome handbrake calibre inkscape jordanbaird-ice kap keepassxc vlc \
     alt-tab another-redis-desktop-manager audacity ghostty xld arc duckduckgo \
     openineditor-lite cursor easydict loop android-studio joplin localsend neovide \
