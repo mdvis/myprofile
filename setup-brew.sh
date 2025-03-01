@@ -12,7 +12,7 @@ set -o pipefail
 brew tap macos-fuse-t/homebrew-cask
 
 brew install \
-    highlight htop imagemagick jq lazygit libxml2 make mkcert neovim \
+    highlight htop imagemagick jq lazygit libxml2 make mkcert neovim go \
     shellcheck shfmt the_silver_searcher tree yamllint zoxide git-lfs \
     nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy cmake \
     btop tmux ctags fastfetch fd ffmpeg ffmpegthumbnailer zsh hadolint sevenzip \
