@@ -179,7 +179,6 @@ install_pip
 install_cargo
 
 curl -sS https://starship.rs/install.sh | sh
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 handler "$APP_SSH_PATH" "$SSH_PATH" "f" || error "Failed to link ssh!"
