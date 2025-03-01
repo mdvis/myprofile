@@ -148,7 +148,7 @@ install_pip() {
 }
 
 install_cargo() {
-    cargo install --locked dprint git-delta stylua yazi-cli yazi-fm
+    cargo install --locked dprint stylua yazi-cli yazi-fm
     # zellij
 
     success "Cargo done!"

@@ -3,13 +3,10 @@
     email = xnmageis@outlook.com
 	signingkey = 1031458D
 [core]
-    pager = delta
     editor = nvim
     excludesfile = /Users/mdvis/.gitignore_global
 	autocrlf = input
 	safecrlf = true
-[interactive]
-    diffFilter = delta --color-only
 [commit]
     template = ~/.gitmessages
 	gpgsign = true
@@ -18,9 +15,6 @@
     ff = true
 [diff]
     tool = code
-[delta]
-    navigate = true
-    line-numbers = true
 [mergetool]
     keepBackup = false
 [difftool]
