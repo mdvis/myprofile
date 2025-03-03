@@ -16,7 +16,8 @@ brew install \
     shellcheck shfmt the_silver_searcher tree yamllint zoxide git-lfs gpg grex \
     nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy cmake \
     btop tmux ctags fastfetch fd ffmpegthumbnailer wabt rust hadolint sevenzip \
-    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc zsh
+    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc yazi stylua dprint \
+    ruff sqlfluff zsh pnpm prettier stylelint
 
 brew install --cask \
     keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass wezterm \

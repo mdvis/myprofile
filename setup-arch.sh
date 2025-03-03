@@ -19,11 +19,12 @@ sudo pacman -S --needed \
     yamllint ripgrep rofi shellcheck shfmt thunderbird tilix tmux wireshark-qt \
     neovim nnn nodejs npm openssl p7zip pandoc-bin pdfarranger picard obsidian \
     aria2 audacity blender btop calibre cmake copyq ctags apostrophe picom zsh \
-    graphicsmagick imagemagick fcitx5-qt networkmanager remmina poppler yarn
+    graphicsmagick imagemagick fcitx5-qt networkmanager remmina poppler stylua \
+    yarn yazi ruff sqlfluff pnpm prettier stylelint
 
 yay -S \
     another-redis-desktop-manager-appimage bottles clash-verge-rev-bin planify \
     cryptomator dbeaver-ee drawio freac freefilesync freeplane-git wike motrix \
     google-chrome hadolint-bin localsend git-cola nekoray stretchly wechat-bin \
     mongodb-compass simplescreenrecorder visual-studio-code-bin goldendict-git \
-    wps-office-cn switchhosts logisim-evolution hiddify
+    wps-office-cn switchhosts logisim-evolution hiddify dprint

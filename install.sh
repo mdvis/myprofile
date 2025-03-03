@@ -135,49 +135,31 @@ backup() {
 
 install_npm() {
     sudo npm i --force -g \
-        stylelint-config-standard pnpm postcss-lit prettier stylelint tern vls \
-        alex cspell neovim nrm stylelint-config-standard-scss
+        neovim tern vls postcss-lit alex cspell nrm \
+        stylelint-config-standard stylelint-config-standard-scss
 
     success "Npm done!"
 }
 
 install_pip() {
     pip3 install --break-system-packages --user \
-        ruff sqlfluff vim-vint jedi neovim pynvim
+        vim-vint jedi neovim pynvim
 
     success "Pip done!"
-}
-
-install_cargo() {
-    cargo install --locked \
-        dprint stylua yazi-cli yazi-fm
-
-    success "Cargo done!"
 }
 
 syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
-command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
-command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
 command -v pacman &>/dev/null &&
     command -v pacman &>/dev/null &&
     "${APP_PATH}/setup-arch.sh"
 
-command -v zsh &>/dev/null || error "No zsh!"
-command -v npm &>/dev/null || error "No npm!"
-command -v git &>/dev/null || error "No git!"
-command -v curl &>/dev/null || error "No curl!"
-command -v pip3 &>/dev/null || error "No pip3!"
-command -v cargo &>/dev/null || error "No cargo!"
-command -v fc-cache &>/dev/null || error "No fc-cache!"
-
 install_fonts
 install_npm
 install_pip
-install_cargo
 
 curl -sS https://starship.rs/install.sh | sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
