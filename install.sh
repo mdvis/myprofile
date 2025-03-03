@@ -134,22 +134,23 @@ backup() {
 }
 
 install_npm() {
-    sudo npm i --force -g alex cspell neovim nrm pnpm postcss-lit prettier stylelint \
-        stylelint-config-standard stylelint-config-standard-scss tern vls
+    sudo npm i --force -g \
+        stylelint-config-standard pnpm postcss-lit prettier stylelint tern vls \
+        alex cspell neovim nrm stylelint-config-standard-scss
 
     success "Npm done!"
 }
 
 install_pip() {
-    pip3 install --break-system-packages --user ruff sqlfluff vim-vint \
-        jedi neovim pynvim
+    pip3 install --break-system-packages --user \
+        ruff sqlfluff vim-vint jedi neovim pynvim
 
     success "Pip done!"
 }
 
 install_cargo() {
-    cargo install --locked dprint stylua yazi-cli yazi-fm
-    # zellij
+    cargo install --locked \
+        dprint stylua yazi-cli yazi-fm
 
     success "Cargo done!"
 }
