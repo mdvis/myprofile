@@ -26,4 +26,4 @@ yay -S \
     cryptomator dbeaver-ee drawio freac freefilesync freeplane-git wike motrix \
     google-chrome hadolint-bin localsend git-cola nekoray stretchly wechat-bin \
     mongodb-compass simplescreenrecorder visual-studio-code-bin goldendict-git \
-    wps-office-cn switchhosts logisim-evolution
+    wps-office-cn switchhosts logisim-evolution hiddify
