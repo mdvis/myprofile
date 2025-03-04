@@ -12,21 +12,21 @@ set -o pipefail
 brew tap macos-fuse-t/homebrew-cask
 
 brew install \
-    highlight htop imagemagick jq lazygit libxml2 make mkcert neovim go ffmpeg \
-    shellcheck shfmt the_silver_searcher tree yamllint zoxide git-lfs gpg grex \
-    nnn node nss nvm openssl pandoc poppler ripgrep rust-analyzer scrcpy cmake \
-    btop tmux ctags fastfetch fd ffmpegthumbnailer wabt rust hadolint sevenzip \
-    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf gcc yazi stylua dprint \
-    ruff sqlfluff zsh pnpm prettier stylelint
+    btop cmake ctags dprint fastfetch fd ffmpeg ffmpegthumbnailer fuse-t-sshfs \
+    fuse-t fzf gcc git-lfs go gpg grex hadolint highlight htop imagemagick zsh \
+    jq lazygit libxml2 make mkcert neovim nnn node nss nvm openssl pandoc pnpm \
+    prettier ripgrep ruff rust rust-analyzer scrcpy sevenzip shellcheck zoxide \
+    shfmt sqlfluff stylelint stylua the_silver_searcher tmux tree wabt poppler \
+    yazi yamllint font-symbols-only-nerd-font aria2
 
 brew install --cask \
-    keepingyouawake keka kekaexternalhelper lulu maccy macdown macpass wezterm \
-    obsidian postman rectangle sfm shotcut shottr stretchly wireshark windterm \
-    mongodb-compass musicbrainz-picard netnewswire skim pika syncthing readest \
-    switchhosts syntax-highlight visual-studio-code openinterminal-lite motrix \
-    balenaetcher blender charles cryptomator dbeaver-community orbstack httpie \
-    google-chrome handbrake calibre inkscape jordanbaird-ice kap keepassxc vlc \
-    alt-tab another-redis-desktop-manager audacity ghostty xld arc thunderbird \
-    easydict joplin neovide ollama duckduckgo localsend loop espanso flameshot \
-    flux freeplane gimp gitx thor textmate tencent-lemon android-studio cursor \
-    drawio telegram-desktop openineditor-lite
+    alt-tab android-studio another-redis-desktop-manager arc audacity windterm \
+    blender calibre charles cryptomator cursor dbeaver-community drawio shottr \
+    easydict espanso flameshot flux freeplane ghostty gimp gitx handbrake keka \
+    google-chrome httpie inkscape joplin jordanbaird-ice kap keepassxc macdown \
+    kekaexternalhelper localsend loop lulu maccy macpass motrix neovide ollama \
+    netnewswire mongodb-compass musicbrainz-picard rectangle openineditor-lite \
+    openinterminal-lite orbstack pika postman readest sfm shotcut obsidian xld \
+    skim stretchly switchhosts syncthing syntax-highlight telegram-desktop vlc \
+    tencent-lemon textmate thor thunderbird wezterm keepingyouawake duckduckgo \
+    wireshark visual-studio-code balenaetcher

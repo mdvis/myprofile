@@ -10,21 +10,21 @@ set -e
 set -o pipefail
 
 sudo pacman -S --needed \
-    docker fcitx5 fcitx5-chinese-addons fcitx5-configtool fd feh ffmpeg zoxide \
-    filezilla flameshot fzf gcc gimp git gnupg guake highlight i3-wm sway foot \
-    i3lock i3status inkscape jq keepass keepassxc libxml2 make mousepad httpie \
-    secrets newsflash foliate ffmpegthumbnailer wezterm git-lfs keyviz ghostty \
-    nama rxvt-unicode azote dunst htop thunar hyprland hdparm fio wabt lazygit \
-    the_silver_searcher nss rust-analyzer shotcut mkcert base-devel scrcpy vlc \
-    yamllint ripgrep rofi shellcheck shfmt thunderbird tilix tmux wireshark-qt \
-    neovim nnn nodejs npm openssl p7zip pandoc-bin pdfarranger picard obsidian \
-    aria2 audacity blender btop calibre cmake copyq ctags apostrophe picom zsh \
-    graphicsmagick imagemagick fcitx5-qt networkmanager remmina poppler stylua \
-    yarn yazi ruff sqlfluff pnpm prettier stylelint
+    aria2 audacity azote base-devel calibre cmake copyq feh yarn yazi i3status \
+    make docker dunst fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-qt \
+    btop ffmpeg ffmpegthumbnailer filezilla fio flameshot foliate foot fzf gcc \
+    ghostty gimp fd git-lfs gnupg graphicsmagick guake hdparm highlight httpie \
+    hyprland i3-wm i3lock imagemagick inkscape keepass keepassxc keyviz jq nnn \
+    ctags lazygit libxml2 mkcert mousepad nama neovim networkmanager newsflash \
+    nodejs npm nss obsidian openssl pandoc-bin pdfarranger picard picom zoxide \
+    poppler prettier remmina ripgrep rofi ruff rust-analyzer rxvt-unicode pnpm \
+    secrets shellcheck shfmt shotcut sqlfluff stylelint stylua sway git scrcpy \
+    thunar thunderbird tilix tmux vlc wabt wezterm wireshark-qt yamllint p7zip \
+    blender zsh the_silver_searcher
 
 yay -S \
-    another-redis-desktop-manager-appimage bottles clash-verge-rev-bin planify \
-    cryptomator dbeaver-ee drawio freac freefilesync freeplane-git wike motrix \
-    google-chrome hadolint-bin localsend git-cola nekoray stretchly wechat-bin \
-    mongodb-compass simplescreenrecorder visual-studio-code-bin goldendict-git \
-    wps-office-cn switchhosts logisim-evolution hiddify dprint
+    another-redis-desktop-manager-appimage bottles clash-verge-rev-bin hiddify \
+    dbeaver-ee dprint drawio freac freefilesync freeplane-git git-cola planify \
+    google-chrome cryptomator goldendict-git logisim-evolution mongodb-compass \
+    motrix nekoray simplescreenrecorder stretchly wechat-bin wike hadolint-bin \
+    visual-studio-code-bin wps-office-cn localsend switchhosts
