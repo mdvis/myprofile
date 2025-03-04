@@ -19,6 +19,7 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 export HOMEBREW_NO_AUTO_UPDATE=true
+
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # homebrew end
@@ -33,56 +34,14 @@ export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-
 export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
 # fzf end
 
-# pnpm
-export PNPM_HOME="${HOME}/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-
-# redis
-export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH"
-# redis end
-
-# postgresql
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@15/lib/pkgconfig"
-# postgresql end
-
-# mariadb
-export PATH="/opt/homebrew/opt/mariadb@10.11/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/mariadb@10.11/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mariadb@10.11/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/mariadb@10.11/lib/pkgconfig"
-# mariadb end
-
-# node
-export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
-# node end
-
-# java
-export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
-# java end
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # nvm end
 
-# bun completions
-[ -s "/Users/mdvis/.bun/_bun" ] && source "/Users/mdvis/.bun/_bun"
-# bun completions end
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-# bun end
-
 # gvm
-[[ -s "/Users/mdvis/.gvm/scripts/gvm" ]] && source "/Users/mdvis/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 # gvm end
 
 [[ -f ~/.alias ]] && source ~/.alias
@@ -91,19 +50,4 @@ export PATH="${HOME}/.local/bin:$PATH"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-# Added by Windsurf
-export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+eval "$(atuin init zsh)"
