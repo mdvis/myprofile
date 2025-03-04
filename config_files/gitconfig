@@ -22,22 +22,6 @@
 [pull]
     rebase = false
     ff = false
-[alias]
-    a = add
-    d = diff
-    l = pull
-    p = push
-    m = merge
-    r = reset
-    b = branch
-    c = commit
-    s = status
-    f = fetch
-    rb = rebase
-    co = checkout
-    fo = fetch origin
-    ss = status --short
-    cn = commit --no-verify
 [init]
     defaultBranch = main
 [filter "lfs"]
