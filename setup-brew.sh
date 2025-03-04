@@ -17,7 +17,7 @@ brew install \
     jq lazygit libxml2 make mkcert neovim nnn node nss nvm openssl pandoc pnpm \
     prettier ripgrep ruff rust rust-analyzer scrcpy sevenzip shellcheck zoxide \
     shfmt sqlfluff stylelint stylua the_silver_searcher tmux tree wabt poppler \
-    yazi yamllint font-symbols-only-nerd-font aria2
+    yazi yamllint font-symbols-only-nerd-font aria2 atuin
 
 brew install --cask \
     alt-tab android-studio another-redis-desktop-manager arc audacity windterm \
