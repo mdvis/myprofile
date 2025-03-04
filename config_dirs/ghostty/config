@@ -9,6 +9,6 @@ font-family = "SauceCodePro Nerd Font"
 
 font-size = 14
 
-command = "$HOME/.local/bin/zsh"
+command = "$HOME/.local/bin/fish"
 
 quit-after-last-window-closed = true
