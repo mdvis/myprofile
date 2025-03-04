@@ -1,11 +1,5 @@
-alias -s {jsx,tsx,js,ts,vue,json,html,xml,scss,less}=nvim
-
 # Profile {
 alias cls='clear'
-
-alias rm='rm -i'
-alias cp='cp -r'
-alias rmf='rm -irf'
 
 alias la='ls --color -lhFa'
 alias ll='ls --color -lhF'
@@ -20,46 +14,26 @@ alias unsp='unset \
            https_proxy \
            '
 
-PROXY_PORT=7890
+set PROXY_PORT 7890
 
-PROXY_SOCKET_ADDRESS='socks5://127.0.0.1'
-PROXY_HTTP_ADDRESS='http://127.0.0.1'
+set PROXY_SOCKET_ADDRESS 'socks5://127.0.0.1'
+set PROXY_HTTP_ADDRESS 'http://127.0.0.1'
 
-PROXY_SOCKET="${PROXY_SOCKET_ADDRESS}:${PROXY_PORT}"
-PROXY_HTTP="${PROXY_HTTP_ADDRESS}:${PROXY_PORT}"
+set PROXY_SOCKET "$PROXY_SOCKET_ADDRESS:$PROXY_PORT"
+set PROXY_HTTP "$PROXY_HTTP_ADDRESS:$PROXY_PORT"
 
-alias sp="export all_proxy=${PROXY_SOCKET}; export http_proxy=${PROXY_HTTP}; export https_proxy=${PROXY_HTTP}"
+alias sp="export all_proxy=$PROXY_SOCKET; export http_proxy=$PROXY_HTTP; export https_proxy=$PROXY_HTTP"
 # }
 
 # Git {
-alias lgit='lazygit'
-
 alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
 
-shotCommitHash='%C(yellow)%h'
-dataStr='%C(red)%ad'
-commitName='%<(9,trunc)%C(blue)%cn'
-commitMsg='%<(40,trunc)%C(reset)%s'
-prettyStr="${shotCommitHash} ${dataStr} ${commitName} ${commitMsg}"
-dateFmtStr='%m/%d %H:%M'
+set shotCommitHash '%C(yellow)%h'
+set dataStr '%C(red)%ad'
+set commitName '%<(9,trunc)%C(blue)%cn'
+set commitMsg '%<(40,trunc)%C(reset)%s'
+set prettyStr "$shotCommitHash $dataStr $commitName $commitMsg"
+set dateFmtStr '%m/%d %H:%M'
 
-alias glg="git log --date=format:\"${dateFmtStr}\" --pretty='${prettyStr}'"
+alias glg="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
 # }
-
-fnv(){
-    nvim $(fzf)
-}
-
-alias fnv=fnv
-
-fop(){
-    open $(fzf)
-}
-
-alias fop=fop
-
-fcode(){
-    code $(fzf)
-}
-
-alias  fcode=fcode
