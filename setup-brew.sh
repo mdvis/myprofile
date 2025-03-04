@@ -26,7 +26,7 @@ brew install --cask \
     google-chrome httpie inkscape joplin jordanbaird-ice kap keepassxc macdown \
     kekaexternalhelper localsend loop lulu maccy macpass motrix neovide ollama \
     netnewswire mongodb-compass musicbrainz-picard rectangle openineditor-lite \
-    openinterminal-lite orbstack pika postman readest sfm shotcut obsidian xld \
+    balenaetcher orbstack pika readest shotcut obsidian xld visual-studio-code \
     skim stretchly switchhosts syncthing syntax-highlight telegram-desktop vlc \
     tencent-lemon textmate thor thunderbird wezterm keepingyouawake duckduckgo \
-    wireshark visual-studio-code balenaetcher
+    wireshark openinterminal-lite
