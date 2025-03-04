@@ -11,8 +11,6 @@ return {
 
     font = wezterm.font_with_fallback({
         "SauceCodePro Nerd Font",
-        -- "CartographCF Nerd Font Mono",
-        "Source Han Sans SC",
     }),
 
     font_size = 14.0,

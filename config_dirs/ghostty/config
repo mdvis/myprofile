@@ -5,9 +5,7 @@ theme = light:duskfox,dark:duskfox
 # theme = light:nightfox,dark:nightfox
 # theme = light:terafox,dark:terafox
 
-# font-family = "SauceCodePro Nerd Font"
-font-family = "CartographCF Nerd Font Mono"
-font-family = "Source Han Sans SC"
+font-family = "SauceCodePro Nerd Font"
 
 font-size = 14
 
