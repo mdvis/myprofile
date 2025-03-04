@@ -13,7 +13,6 @@ set -o pipefail
 APP_NAME="myprofile"
 APP_REPO_URI="https://github.com/mdvis/${APP_NAME}.git"
 APP_PATH="${HOME}/.${APP_NAME}"
-APP_TOOL_PATH="${APP_PATH}/tools"
 APP_CONFIG_FILE_PATH="${APP_PATH}/config_files"
 APP_CONFIG_DIR_PATH="${APP_PATH}/config_dirs"
 APP_FONT_PATH="${APP_PATH}/fonts"
@@ -165,6 +164,5 @@ curl -sS https://starship.rs/install.sh | sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 handler "$APP_SSH_PATH" "$SSH_PATH" "f" || error "Failed to link ssh!"
-handler "$APP_TOOL_PATH" "${LOCAL_BIN_PATH}" "f" || error "Failed to link tools!"
-handler "$APP_CONFIG_FILE_PATH" "$HOME/." "f" || error "Failed to link config!"
+handler "$APP_CONFIG_FILE_PATH" "$HOME/." "f" || error "Failed to link config file!"
 handler "$APP_CONFIG_DIR_PATH" "$CONFIG_PATH" "d" || error "Failed to link config dir!"
