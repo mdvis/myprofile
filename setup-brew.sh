@@ -29,4 +29,4 @@ brew install --cask \
     balenaetcher orbstack pika readest shotcut obsidian xld visual-studio-code \
     skim stretchly switchhosts syncthing syntax-highlight telegram-desktop vlc \
     tencent-lemon textmate thor thunderbird wezterm keepingyouawake duckduckgo \
-    wireshark openinterminal-lite
+    wireshark openinterminal-lite veracrypt

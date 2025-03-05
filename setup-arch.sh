@@ -20,7 +20,7 @@ sudo pacman -S --needed \
     poppler prettier remmina ripgrep rofi ruff rust-analyzer rxvt-unicode pnpm \
     secrets shellcheck shfmt shotcut sqlfluff stylelint stylua sway git scrcpy \
     thunar thunderbird tilix tmux vlc wabt wezterm wireshark-qt yamllint p7zip \
-    blender the_silver_searcher atuin fish
+    blender the_silver_searcher atuin fish veracrypt
 
 yay -S \
     another-redis-desktop-manager-appimage bottles clash-verge-rev-bin hiddify \
