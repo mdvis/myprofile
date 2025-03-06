@@ -134,27 +134,34 @@ backup() {
 
 install_npm() {
     sudo npm i --force -g \
-        neovim tern vls postcss-lit alex cspell nrm \
-        stylelint-config-standard stylelint-config-standard-scss
+        alex cspell neovim nrm pnpm prettier postcss-lit stylelint \
+        stylelint-config-standard stylelint-config-standard-scss tern vls
 
     success "Npm done!"
 }
 
 install_pip() {
     pip3 install --break-system-packages --user \
-        vim-vint jedi neovim pynvim
+        jedi neovim pynvim sqlfluff vim-vint
 
     success "Pip done!"
+}
+
+install_pip() {
+    cargo install --locked \
+        stylua dprint
+
+    success "Cargo done!"
 }
 
 syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
+command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
+command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
-command -v pacman &>/dev/null &&
-    command -v pacman &>/dev/null &&
-    "${APP_PATH}/setup-arch.sh"
+command -v pacman &>/dev/null && . "${APP_PATH}/setup-arch.sh"
 
 install_fonts
 install_npm
