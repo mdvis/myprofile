@@ -30,6 +30,6 @@ sudo dnf install -y \
 sudo dnf install -y \
     python-devel goldendict hadolint snapd
 
-sudo dnf group install "Development Tools"
+sudo dnf group install "development-tools"
 
 . "${APP_PATH}/setup-common.sh"
