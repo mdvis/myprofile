@@ -12,7 +12,7 @@ set -o pipefail
 brew tap macos-fuse-t/homebrew-cask
 
 brew install \
-    aria2 atuin btop cmake ctags dprint fastfetch fd ffmpeg ffmpegthumbnailer \
+    aria2 btop cmake ctags dprint fastfetch fd ffmpeg ffmpegthumbnailer \
     fish font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf git-cola gcc \
     git-lfs go gpg grex hadolint highlight htop imagemagick jq lazygit libxml2 \
     make mkcert neovim nnn node nss nvm openssl pandoc poppler prettier \

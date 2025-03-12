@@ -50,7 +50,6 @@ export PATH="${HOME}/.local/bin:$PATH"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
 
 # antigen
 source "$HOME/.antigen.zsh"
