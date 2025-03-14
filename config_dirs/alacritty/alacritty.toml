@@ -6,7 +6,7 @@ working_directory = "/Users/mdvis/Code"
 TERM = "xterm-256color"
 
 [font.normal]
-family = "JetBrains Maple Mono"
+family = "Mononoki Nerd Font"
 style = "Regular"
 
 [font]
