@@ -149,7 +149,7 @@ install_pip() {
 
 install_pip() {
     cargo install --locked \
-        stylua dprint
+        stylua dprint atuin
 
     success "Cargo done!"
 }
