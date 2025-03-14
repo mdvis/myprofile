@@ -1,0 +1,158 @@
+# Colors (Gruvbox dark)
+[colors]
+
+[colors.primary]
+background = "#282828" # hard contrast background - '#1d2021'
+foreground = "#ebdbb2" # soft contrast background - '#32302f'
+bright_foreground = "#fbf1c7"
+dim_foreground = "#a89984"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[colors.vi_mode_cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[colors.selection]
+text = "CellBackground"
+background = "CellForeground"
+
+[colors.bright]
+black = "#928374"
+red = "#fb4934"
+green = "#b8bb26"
+yellow = "#fabd2f"
+blue = "#83a598"
+magenta = "#d3869b"
+cyan = "#8ec07c"
+white = "#ebdbb2"
+
+[colors.normal]
+black = "#282828"
+red = "#cc241d"
+green = "#98971a"
+yellow = "#d79921"
+blue = "#458588"
+magenta = "#b16286"
+cyan = "#689d6a"
+white = "#a89984"
+
+[colors.dim]
+black = "#32302f"
+red = "#9d0006"
+green = "#79740e"
+yellow = "#b57614"
+blue = "#076678"
+magenta = "#8f3f71"
+cyan = "#427b58"
+white = "#928374"
+
+[[colors.indexed_colors]]
+index = 66
+color = "#458588"
+
+[[colors.indexed_colors]]
+index = 72
+color = "#689d6a"
+
+[[colors.indexed_colors]]
+index = 106
+color = "#98971a"
+
+[[colors.indexed_colors]]
+index = 108
+color = "#8ec07c"
+
+[[colors.indexed_colors]]
+index = 109
+color = "#83a598"
+
+[[colors.indexed_colors]]
+index = 124
+color = "#cc241d"
+
+[[colors.indexed_colors]]
+index = 132
+color = "#b16286"
+
+[[colors.indexed_colors]]
+index = 142
+color = "#b8bb26"
+
+[[colors.indexed_colors]]
+index = 166
+color = "#d65d0e"
+
+[[colors.indexed_colors]]
+index = 167
+color = "#fb4934"
+
+[[colors.indexed_colors]]
+index = 172
+color = "#d79921"
+
+[[colors.indexed_colors]]
+index = 175
+color = "#d3869b"
+
+[[colors.indexed_colors]]
+index = 208
+color = "#fe8019"
+
+[[colors.indexed_colors]]
+index = 214
+color = "#fabd2f"
+
+[[colors.indexed_colors]]
+index = 223
+color = "#ebdbb2"
+
+[[colors.indexed_colors]]
+index = 229
+color = "#fbf1c7"
+
+[[colors.indexed_colors]]
+index = 234
+color = "#1d2021"
+
+[[colors.indexed_colors]]
+index = 235
+color = "#282828"
+
+[[colors.indexed_colors]]
+index = 236
+color = "#32302f"
+
+[[colors.indexed_colors]]
+index = 237
+color = "#3c3836"
+
+[[colors.indexed_colors]]
+index = 239
+color = "#504945"
+
+[[colors.indexed_colors]]
+index = 241
+color = "#665c54"
+
+[[colors.indexed_colors]]
+index = 243
+color = "#7c6f64"
+
+[[colors.indexed_colors]]
+index = 245
+color = "#928374"
+
+[[colors.indexed_colors]]
+index = 246
+color = "#a89984"
+
+[[colors.indexed_colors]]
+index = 248
+color = "#bdae93"
+
+[[colors.indexed_colors]]
+index = 250
+color = "#d5c4a1"

@@ -1,0 +1,21 @@
+[general]
+import = ["./theme/Duskfox.toml"]
+working_directory = "/Users/mdvis/Code"
+
+[env]
+TERM = "xterm-256color"
+
+# "SauceCodePro Nerd Font"
+# "Source Han Sans SC"
+[font.normal]
+family = "CartographCF Nerd Font Mono"
+style = "Regular"
+
+[font]
+size = 14.0
+
+[terminal.shell]
+program = "/Users/mdvis/.local/bin/tmux"
+
+[cursor]
+style = "Beam"
