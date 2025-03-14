@@ -5,10 +5,8 @@ working_directory = "/Users/mdvis/Code"
 [env]
 TERM = "xterm-256color"
 
-# "SauceCodePro Nerd Font"
-# "Source Han Sans SC"
 [font.normal]
-family = "CartographCF Nerd Font Mono"
+family = "JetBrains Maple Mono"
 style = "Regular"
 
 [font]
