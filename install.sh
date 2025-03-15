@@ -147,7 +147,7 @@ install_pip() {
     success "Pip done!"
 }
 
-install_pip() {
+install_cargo() {
     cargo install --locked \
         stylua dprint atuin
 
@@ -166,6 +166,7 @@ command -v pacman &>/dev/null && . "${APP_PATH}/setup-arch.sh"
 install_fonts
 install_npm
 install_pip
+install_cargo
 
 curl -sS https://starship.rs/install.sh | sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
