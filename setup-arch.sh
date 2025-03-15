@@ -19,7 +19,7 @@ sudo pacman -S --needed \
     aria2 audacity azote blender btop calibre cmake copyq ctags docker dunst \
     fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-qt \
     fcitx5-table-extra fd feh ffmpeg ffmpegthumbnailer filezilla fio fish \
-    flameshot foliate foot fzf gimp git git-cola git-lfs gnupg \
+    flameshot foliate foot fzf gimp git git-lfs gnupg \
     go guake hdparm highlight httpie hyprland i3-wm i3lock i3status inkscape \
     jq keepass keepassxc libxml2 mousepad neovim nnn nodejs npm \
     nss openssl p7zip pandoc-bin pdfarranger picard picom poppler \
@@ -30,6 +30,6 @@ sudo pacman -S --needed \
 sudo pacman -S --needed base-devel
 
 yay -S \
-    goldendict-git hadolint-bin snapd
+    goldendict-git hadolint-bin snapd git-cola
 
 . "${APP_PATH}/setup-common.sh"
