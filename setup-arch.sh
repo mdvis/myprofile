@@ -22,7 +22,7 @@ sudo pacman -S --needed \
     flameshot foliate foot fzf gimp git git-lfs gnupg \
     go guake hdparm highlight httpie hyprland i3-wm i3lock i3status inkscape \
     jq keepass keepassxc libxml2 mousepad neovim nnn nodejs npm \
-    nss openssl p7zip pandoc-bin pdfarranger picard picom poppler \
+    nss openssl p7zip pandoc-cli pdfarranger picard picom poppler \
     remmina ripgrep rofi ruff rust rust-analyzer rxvt-unicode secrets \
     shellcheck shfmt shotcut sway the_silver_searcher thunar thunderbird tilix \
     tmux vlc wabt wike wireshark-qt yamllint yarn zoxide
