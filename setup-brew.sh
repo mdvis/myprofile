@@ -12,12 +12,12 @@ set -o pipefail
 brew tap macos-fuse-t/homebrew-cask
 
 brew install \
-    aria2 btop cmake ctags dprint fastfetch fd ffmpeg ffmpegthumbnailer \
-    fish font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf git-cola gcc \
-    git-lfs go gpg grex hadolint highlight htop imagemagick jq lazygit libxml2 \
-    make mkcert neovim nnn node nss nvm openssl pandoc poppler prettier \
-    ripgrep ruff rust rust-analyzer scrcpy sevenzip shellcheck shfmt sqlfluff \
-    stylelint stylua the_silver_searcher tmux tree wabt yamllint yazi zoxide
+    aria2 btop cmake ctags dprint fastfetch fd ffmpeg ffmpegthumbnailer fish \
+    font-symbols-only-nerd-font fuse-t fuse-t-sshfs fzf git-cola gcc git-lfs \
+    go gpg grex hadolint highlight htop imagemagick jq lazygit libxml2 make \
+    mkcert neovim nnn node nss nvm openssl pandoc poppler prettier ripgrep \
+    ruff rust rust-analyzer scrcpy sevenzip shellcheck shfmt sqlfluff stylelint \
+    stylua the_silver_searcher tmux tree wabt yamllint yazi zoxide mkcert keyviz
 
 brew install --cask \
     alt-tab android-studio another-redis-desktop-manager arc audacity \

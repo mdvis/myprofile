@@ -47,19 +47,6 @@ error() {
     exit 1
 }
 
-install_fonts() {
-    if [ "${System}" == "darwin" ]; then
-        mkdir -p "$MAC_FONTS_PATH"
-
-        cp -r "$APP_FONT_PATH"/* "$MAC_FONTS_PATH"
-    else
-        mkdir -p "$LOCAL_FONTS_PATH"
-        cp -r "$APP_FONT_PATH"/* "$LOCAL_FONTS_PATH"
-        fc-cache -fv >/dev/null
-    fi
-    success "Font done!"
-}
-
 ln_if() {
     if [ -e "$1" ]; then
         ln -sf "$1" "$2"
@@ -132,6 +119,19 @@ backup() {
     done
 }
 
+install_fonts() {
+    if [ "${System}" == "darwin" ]; then
+        mkdir -p "$MAC_FONTS_PATH"
+
+        cp -r "$APP_FONT_PATH"/* "$MAC_FONTS_PATH"
+    else
+        mkdir -p "$LOCAL_FONTS_PATH"
+        cp -r "$APP_FONT_PATH"/* "$LOCAL_FONTS_PATH"
+        fc-cache -fv >/dev/null
+    fi
+    success "Font done!"
+}
+
 install_npm() {
     sudo npm i --force -g \
         alex cspell neovim nrm pnpm prettier postcss-lit stylelint \
@@ -141,15 +141,16 @@ install_npm() {
 }
 
 install_pip() {
-    pip3 install --break-system-packages --user \
-        jedi neovim pynvim sqlfluff vim-vint
+    [ -e $HOME/nvim_venv ] && . $HOME/nvim_venv/bin/activate
+    [ -e $HOME/nvim_venv ] || python3 -m venv $HOME/nvim_venv
+
+    pip3 install --user jedi neovim pynvim sqlfluff vim-vint
 
     success "Pip done!"
 }
 
 install_cargo() {
-    cargo install --locked \
-        stylua dprint atuin
+    cargo install --locked stylua dprint atuin
 
     success "Cargo done!"
 }
@@ -158,10 +159,8 @@ syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
-command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
 command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
-command -v pacman &>/dev/null && . "${APP_PATH}/setup-arch.sh"
 
 install_fonts
 install_npm
