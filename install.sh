@@ -6,7 +6,7 @@
 # date: 2022-03-27
 # ------
 
-set -e
+# set -e
 # set -u
 set -o pipefail
 

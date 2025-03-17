@@ -6,7 +6,7 @@
 # date: 2022-06-29
 # ------
 
-set -e
+# set -e
 set -o pipefail
 
 brew tap macos-fuse-t/homebrew-cask
