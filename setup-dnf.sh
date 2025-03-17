@@ -25,7 +25,7 @@ sudo dnf install -y \
     rxvt-unicode secrets shellcheck shfmt shotcut sway the_silver_searcher \
     thunar thunderbird tilix tmux vlc wabt wike wireshark yamllint yarnpkg \
     GraphicsMagick ImageMagick NetworkManager python-devel goldendict hadolint \
-    snapd
+    snapd flatpak
 
 # flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -48,7 +48,7 @@ fi
 # snapcraft
 sudo ln -sf /var/lib/snapd/snap /snap
 
-sudo snap install scrcpy ghostty yazi
+sudo snap install scrcpy ghostty yazi --classic
 
 if [ "$ARCH" = "$AMD64" ]; then
     sudo snap install another-redis-desktop-manager simplescreenrecorder \
