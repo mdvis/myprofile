@@ -12,6 +12,8 @@ set -o pipefail
 ARCH="$(uname -m)"
 AMD64="x86_64"
 
+sudo dnf upgrade
+
 sudo dnf group install "development-tools"
 
 sudo dnf install -y \
