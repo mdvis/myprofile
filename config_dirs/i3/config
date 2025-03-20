@@ -1,7 +1,10 @@
 # Mod1 Alt / Mod4 Win
 set $mod Mod1
 
-font pango:SauceCodePro Nerd Font Mono 20
+# set $the_font SauceCodePro Nerd Font
+set $the_font Mononoki Nerd Font
+
+font pango:$the_font 20
 
 new_float normal
 new_window pixel 1
@@ -153,7 +156,7 @@ bar {
     bindsym button5 nop
     strip_workspace_numbers yes
     #mode hide
-    font pango:SauceCodePro Nerd Font Mono 6
+    font pango:$the_font 8
     separator_symbol "::"
     colors {
         background #282A36
