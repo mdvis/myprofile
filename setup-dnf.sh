@@ -24,7 +24,7 @@ sudo dnf install -y \
     rxvt-unicode secrets shellcheck shfmt shotcut sway the_silver_searcher \
     thunar thunderbird tilix tmux vlc wabt wike wireshark yamllint yarnpkg \
     GraphicsMagick ImageMagick NetworkManager python-devel goldendict hadolint \
-    snapd flatpak
+    snapd flatpak cargo
 
 # flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
