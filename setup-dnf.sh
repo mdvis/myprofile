@@ -47,7 +47,9 @@ fi
 # snapcraft
 sudo ln -sf /var/lib/snapd/snap /snap
 
-sudo snap install scrcpy ghostty yazi --classic
+sudo snap install scrcpy
+sudo snap install ghostty --classic
+sudo snap install yazi --classic
 
 if [ "$ARCH" = "$AMD64" ]; then
     sudo snap install another-redis-desktop-manager simplescreenrecorder \
