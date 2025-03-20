@@ -21,10 +21,10 @@ sudo dnf install -y \
     httpie hyprland i3 i3lock i3status inkscape jq keepass keepassxc libxml2 \
     mousepad neovim nnn nodejs npm nss-tools openssl p7zip pandoc pdfarranger \
     picard picom poppler remmina ripgrep rofi ruff rust rust-analyzer zoxide \
-    rxvt-unicode secrets shellcheck shfmt shotcut sway the_silver_searcher \
+    rxvt-unicode secrets shellcheck shfmt shotcut the_silver_searcher \
     thunar thunderbird tilix tmux vlc wabt wike wireshark yamllint yarnpkg \
     GraphicsMagick ImageMagick NetworkManager python-devel goldendict hadolint \
-    snapd flatpak cargo gcc-c++
+    snapd flatpak cargo gcc-c++ sway swaylock swaybar
 
 # flathub
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
