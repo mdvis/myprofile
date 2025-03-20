@@ -39,7 +39,7 @@ msg() {
 }
 
 success() {
-    msg "${Green}[✔]${Color_off} ${1}${2}"
+    msg "${Green}[✔]${Color_off} ${1}"
 }
 
 error() {
