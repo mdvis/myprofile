@@ -26,4 +26,4 @@ brew install --cask \
     netnewswire obsidian ollama openineditor-lite openinterminal-lite orbstack \
     pika readest rectangle shotcut shottr skim stretchly switchhosts syncthing \
     syntax-highlight telegram-desktop tencent-lemon textmate thor thunderbird \
-    veracrypt visual-studio-code vlc wezterm windterm wireshark xld
+    veracrypt visual-studio-code vlc wezterm windterm wireshark xld betterdispkay
