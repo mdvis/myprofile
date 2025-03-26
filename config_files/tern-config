@@ -1,13 +1,8 @@
 {
-    "libs":[
-        "browser",
-        "jquery",
-        "react",
-        "es6"
-    ],
-    "plugins":{
-        "node":{},
-        "react":{},
-        "es6":{}
-    }
+  "libs": ["browser", "jquery", "react", "es6"],
+  "plugins": {
+    "node": {},
+    "react": {},
+    "es6": {}
+  }
 }

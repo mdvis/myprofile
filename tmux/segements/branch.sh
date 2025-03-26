@@ -16,7 +16,7 @@ run_segment() {
     return 0
 }
 
-# Show git banch.
+# Show git branch.
 __parse_git_branch() {
     type git >/dev/null 2>&1
 

@@ -1,6 +1,6 @@
 ---
 # 箭头函数一个参数时是否要有小括号 "<avoid|always>"
-arrowParens: "always"
+arrowParens: 'always'
 
 # JSX 元素的 > 放在最后一行的末尾，而不是单独放在下一行
 bracketSameLine: true
@@ -9,10 +9,10 @@ bracketSameLine: true
 bracketSpacing: true
 
 # 换行符使用 lf 结尾 "<auto|lf|crlf|cr>"
-endOfLine: "lf"
+endOfLine: 'lf'
 
 # html 折行 "<css|strict空格敏感|ignore空格不敏感>"
-htmlWhitespaceSensitivity: "css"
+htmlWhitespaceSensitivity: 'css'
 
 # 插入开头的 @prettier
 insertPragma: false
@@ -24,10 +24,10 @@ jsxSingleQuote: false
 printWidth: 80
 
 # markdown 换行 "<preserve|always|never>"
-proseWrap: "preserve"
+proseWrap: 'preserve'
 
 # 更改引用对象属性的时间 "<as-needed|consistent|preserve>"
-quoteProps: "as-needed"
+quoteProps: 'as-needed'
 
 # 不需要开头的 @prettier
 requirePragma: false
@@ -45,7 +45,7 @@ singleQuote: true
 tabWidth: 2
 
 # 多行时尽可能打印尾随逗号 "<none|es5|all>" 默认none
-trailingComma: "all"
+trailingComma: 'all'
 
 # 使用 .editorconfig
 useEditorConfig: true
