@@ -11,8 +11,8 @@ APP_PATH="${HOME}/.${APP_NAME}"
 
 brew tap macos-fuse-t/homebrew-cask
 
-echo "-- brew start --"
+echo "-- cask start --"
 while read -r app; do
-    brew install "$app"
-done <"${APP_PATH}"/packages/brew
-echo "--- brew end ---"
+    brew install --cask "$app"
+done <"$APP_PATH"/packages/cask
+echo "--- cask end ---"

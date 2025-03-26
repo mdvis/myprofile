@@ -132,40 +132,22 @@ install_fonts() {
     success "Font done!"
 }
 
-install_npm() {
-    sudo npm i --force -g \
-        alex cspell neovim nrm pnpm prettier postcss-lit stylelint \
-        stylelint-config-standard stylelint-config-standard-scss tern vls
-
-    success "Npm done!"
-}
-
-install_pip() {
-    [ -e $HOME/nvim_venv ] && . $HOME/nvim_venv/bin/activate
-    [ -e $HOME/nvim_venv ] || python3 -m venv $HOME/nvim_venv
-
-    pip3 install --user jedi neovim pynvim sqlfluff vim-vint
-
-    success "Pip done!"
-}
-
-install_cargo() {
-    cargo install --locked stylua dprint atuin
-
-    success "Cargo done!"
-}
-
 syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
+command -v brew &>/dev/null &&
+    . "${APP_PATH}/setup-brew.sh" &&
+    . "${APP_PATH}/setup-cask.sh"
+
 command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
-command -v brew &>/dev/null && . "${APP_PATH}/setup-brew.sh"
+command -v flatpak &>/dev/null && . "${APP_PATH}/setup-flatpak.sh"
+command -v snap &>/dev/null && . "${APP_PATH}/setup-snap.sh"
+command -v cargo &>/dev/null && . "${APP_PATH}/setup-cargo.sh"
+command -v npm &>/dev/null && . "${APP_PATH}/setup-npm.sh"
+command -v pip3 &>/dev/null && . "${APP_PATH}/setup-pip.sh"
 
 install_fonts
-install_npm
-install_pip
-install_cargo
 
 curl -sS https://starship.rs/install.sh | sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
