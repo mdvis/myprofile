@@ -1,12 +1,12 @@
 [general]
 import = ["./theme/Duskfox.toml"]
-working_directory = "/Users/mdvis/Code"
+# working_directory = "/Users/mdvis/Code"
 
 [env]
 TERM = "xterm-256color"
 
 [font.normal]
-family = "Mononoki Nerd Font"
+family = "Source Code Pro"
 style = "Regular"
 
 [font]

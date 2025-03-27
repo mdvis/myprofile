@@ -10,7 +10,9 @@ return {
     -- color_scheme = "terafox",
 
     font = wezterm.font_with_fallback({
-        "SauceCodePro Nerd Font",
+        "Source Code Pro",
+        "思源黑体",
+        "Symbols Nerd Font",
     }),
 
     font_size = 14.0,
