@@ -7,8 +7,6 @@ fastfetch
 fd
 ffmpeg
 ffmpegthumbnailer
-fish
-font-symbols-only-nerd-font
 fuse-t
 fuse-t-sshfs
 fzf
@@ -18,10 +16,8 @@ git-lfs
 glslang
 go
 gpg
-grex
 hadolint
 highlight
-htop
 imagemagick
 jq
 keyviz
@@ -30,7 +26,6 @@ libxml2
 make
 mkcert
 neovim
-nnn
 node
 nss
 nvm
@@ -52,7 +47,6 @@ stylua
 the_silver_searcher
 tmux
 tree
-wabt
 yamllint
 yazi
 zoxide
