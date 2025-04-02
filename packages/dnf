@@ -1,6 +1,8 @@
 GraphicsMagick
 ImageMagick
 NetworkManager
+R-lintr
+R-styler
 aria2
 audacity
 azote
@@ -8,6 +10,7 @@ blender
 btop
 calibre
 cargo
+clang-tools-extra
 cmake
 copyq
 ctags
@@ -35,6 +38,7 @@ gimp
 git
 git-cola
 git-lfs
+glslang
 gnupg
 golang
 goldendict

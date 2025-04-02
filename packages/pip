@@ -1,3 +1,6 @@
+cmakelang
+djlint
+gitlint
 jedi
 neovim
 pynvim
