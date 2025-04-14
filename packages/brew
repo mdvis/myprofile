@@ -44,7 +44,6 @@ shellcheck
 shfmt
 sqlfluff
 stylelint
-stylua
 the_silver_searcher
 tmux
 tree
