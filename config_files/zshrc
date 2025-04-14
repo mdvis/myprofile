@@ -58,3 +58,5 @@ source "$HOME/.antigen.zsh"
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 # antigen  end
+# Added by Windsurf
+export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
