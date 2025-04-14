@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/mdvis/.zsh/completions:"* ]]; then export FPATH="/Users/mdvis/.zsh/completions:$FPATH"; fi
 # sys
 export GPG_TTY=$(tty)
 export EDITOR=nvim
