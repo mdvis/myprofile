@@ -6,7 +6,7 @@ import = ["./theme/Duskfox.toml"]
 TERM = "xterm-256color"
 
 [font.normal]
-family = "KSS"
+family = "SSS"
 style = "Regular"
 
 [font]
