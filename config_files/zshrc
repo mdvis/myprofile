@@ -70,3 +70,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
