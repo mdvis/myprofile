@@ -11,16 +11,11 @@ return {
 
     font = wezterm.font_with_fallback({
         "Source Code Pro",
-        "思源黑体",
+        "Maple Mono CN",
         "Symbols Nerd Font",
     }),
 
     font_size = 14.0,
 
     default_prog = { home .. "/.local/bin/tmux" },
-
-    enable_tab_bar = false,
-
-    initial_cols = 140,
-    initial_rows = 40,
 }
