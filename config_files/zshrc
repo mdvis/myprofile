@@ -1,5 +1,3 @@
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/Users/mdvis/.zsh/completions:"* ]]; then export FPATH="/Users/mdvis/.zsh/completions:$FPATH"; fi
 # sys
 export GPG_TTY=$(tty)
 export EDITOR=nvim
@@ -42,10 +40,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # nvm end
 
-# gvm
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-# gvm end
-
 [[ -f ~/.alias ]] && source ~/.alias
 
 export PATH="${HOME}/.local/bin:$PATH"
@@ -57,10 +51,13 @@ eval "$(atuin init zsh)"
 
 # antigen
 source "$HOME/.antigen.zsh"
+
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 # antigen  end
-. "/Users/mdvis/.deno/env"
+
 # bun completions
 [ -s "/Users/mdvis/.bun/_bun" ] && source "/Users/mdvis/.bun/_bun"
 
@@ -68,8 +65,8 @@ antigen apply
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Added by Windsurf
-export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
 
-# Added by Windsurf
-export PATH="/Users/mdvis/.codeium/windsurf/bin:$PATH"
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/mdvis/.zsh/completions:"* ]]; then
+    export FPATH="/Users/mdvis/.zsh/completions:$FPATH"
+fi
