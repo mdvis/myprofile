@@ -136,10 +136,6 @@ syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
-command -v brew &>/dev/null &&
-    . "${APP_PATH}/setup-brew.sh" &&
-    . "${APP_PATH}/setup-cask.sh"
-
 command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v flatpak &>/dev/null && . "${APP_PATH}/setup-flatpak.sh"
 command -v snap &>/dev/null && . "${APP_PATH}/setup-snap.sh"
