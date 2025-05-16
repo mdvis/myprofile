@@ -6,7 +6,7 @@ theme = light:duskfox,dark:duskfox
 # theme = light:terafox,dark:terafox
 
 font-family = "Source Code Pro"
-font-family = "思源黑体"
+font-family = "Maple Mono CN"
 font-family = "Symbols Nerd Font"
 
 font-size = 14
