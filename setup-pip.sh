@@ -14,6 +14,6 @@ APP_PATH="${HOME}/.${APP_NAME}"
 
 echo "-- pip start --"
 while read -r app; do
-    pip3 install --user "$app"
+    pip3 install "$app"
 done <"$APP_PATH"/packages/pip
 echo "--- pip end ---"
