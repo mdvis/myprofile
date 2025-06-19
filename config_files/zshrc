@@ -24,6 +24,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # homebrew end
 
+export PATH="/opt/quarkdown/bin:$PATH"
+
 # go
 export PATH="${HOME}/go/bin:$PATH"
 export GO111MODULE=on
