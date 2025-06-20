@@ -9,7 +9,8 @@
 	safecrlf = true
 [commit]
     template = ~/.gitmessages
-	gpgsign = true
+    # gpgsign = true
+	gpgsign = false
 [merge]
     tool = code
     ff = true
