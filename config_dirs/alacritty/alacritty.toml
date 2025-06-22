@@ -1,6 +1,6 @@
 [general]
-import = ["./theme/Duskfox.toml"]
-# working_directory = "/Users/mdvis/Code"
+import = ["./theme/Kanagawa_dragon.toml"]
+working_directory = "/Users/mdvis/Code"
 
 [env]
 TERM = "xterm-256color"
