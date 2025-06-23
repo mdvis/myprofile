@@ -136,6 +136,8 @@ syncRepo "$APP_PATH" "$APP_REPO_URI"
 
 cd "$APP_PATH" || exit
 
+command -v pacman &>/dev/null && . "${APP_PATH}/setup-arch.sh"
+command -v paru &>/dev/null && . "${APP_PATH}/setup-aur.sh"
 command -v dnf &>/dev/null && . "${APP_PATH}/setup-dnf.sh"
 command -v flatpak &>/dev/null && . "${APP_PATH}/setup-flatpak.sh"
 command -v snap &>/dev/null && . "${APP_PATH}/setup-snap.sh"
