@@ -50,7 +50,9 @@ inkscape
 jq
 keepass
 keepassxc
+kubectl
 libxml2
+minikube
 mousepad
 neovim
 networkmanager
