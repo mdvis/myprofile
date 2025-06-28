@@ -11,6 +11,6 @@ APP_PATH="${HOME}/.${APP_NAME}"
 
 echo "-- arch start --"
 while read -r app; do
-    sudo pacman -S "$app"
+    sudo pacman -S --needed "$app"
 done <"$APP_PATH"/packages/arch
 echo "--- arch end ---"
