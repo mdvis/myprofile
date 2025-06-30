@@ -44,7 +44,8 @@ export PATH="${HOME}/.cargo/bin:$PATH"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-eval "$(vfox activate zsh)"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # antigen
 source "$HOME/.antigen.zsh"
