@@ -29,7 +29,6 @@ filezilla
 fio
 flameshot
 flatpak
-foliate
 foot
 fzf
 gcc-c++
@@ -56,7 +55,6 @@ keepass
 keepassxc
 libxml2
 mousepad
-neovim
 nodejs
 npm
 nss-tools
@@ -75,7 +73,6 @@ rofi
 ruff
 rust
 rust-analyzer
-rxvt-unicode
 secrets
 shellcheck
 shfmt
@@ -89,8 +86,8 @@ thunar
 thunderbird
 tilix
 tmux
+vim
 vlc
-wike
 wireshark
 yamllint
 yarnpkg
