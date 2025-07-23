@@ -37,6 +37,7 @@ gimp
 git
 git-cola
 git-lfs
+gitk
 glslang
 gnupg
 golang
