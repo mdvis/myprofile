@@ -1,10 +1,10 @@
-com.google.Chrome
+org.freedesktop.Platform//24.08
+org.freedesktop.Sdk//24.08
+org.gnome.Platform//48
+org.gnome.Platform//47
 com.jgraph.drawio.desktop
-com.mongodb.Compass
 com.tencent.WeChat
-com.usebottles.bottles
 com.visualstudio.code
-com.wps.Office
 io.dbeaver.DBeaverCommunity
 io.github.alainm23.planify
 io.gitlab.news_flash.NewsFlash

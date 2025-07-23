@@ -13,6 +13,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 echo "-- flatpak start --"
 while read -r app; do
-    sudo flatpak install flathub "$app"
+    sudo flatpak install -y flathub "$app"
 done <"$APP_PATH"/packages/flatpak
 echo "--- flatpak end ---"
