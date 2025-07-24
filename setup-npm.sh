@@ -11,6 +11,6 @@ APP_PATH="${HOME}/.${APP_NAME}"
 
 echo "-- npm start --"
 while read -r app; do
-    npm i -g "$app"
+    sudo npm i -g "$app"
 done <"$APP_PATH"/packages/npm
 echo "--- npm end ---"
