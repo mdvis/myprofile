@@ -15,4 +15,8 @@ echo "-- snap start --"
 while read -r app; do
     sudo snap install "$app"
 done <"$APP_PATH"/packages/snap
+
+while read -r app; do
+    sudo snap install "$app" --classic
+done <"$APP_PATH"/packages/snap-classic
 echo "--- snap end ---"

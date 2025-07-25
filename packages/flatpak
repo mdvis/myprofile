@@ -18,3 +18,7 @@ org.freeplane.App
 org.gnome.gitlab.somas.Apostrophe
 org.localsend.localsend_app
 org.wezfurlong.wezterm
+com.google.Chrome
+com.mongodb.Compass
+com.usebottles.bottles
+com.wps.Office
