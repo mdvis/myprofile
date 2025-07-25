@@ -3,6 +3,7 @@ ImageMagick
 NetworkManager
 R-lintr
 R-styler
+alacritty
 aria2
 audacity
 azote
@@ -77,10 +78,12 @@ secrets
 shellcheck
 shfmt
 shotcut
+sirikali
 snapd
 sway
 swaybar
 swaylock
+syncthing
 the_silver_searcher
 thunar
 thunderbird
