@@ -1,12 +1,10 @@
 # Profile {
+alias la='eza -lha -F'
+alias ll='eza -lh -F'
+
+alias lzg='lazygit'
+
 alias cls='clear'
-
-alias la='ls --color -lhFa'
-alias ll='ls --color -lhF'
-alias l1='ls --color -F1'
-alias ls='ls --color -F'
-
-alias lg='lazygit'
 # }
 
 # Proxy {
