@@ -14,12 +14,14 @@ sudo dnf install dnf5-plugins
 sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
 sudo dnf install gh --repo gh-cli
 
+sudo dnf copr enable jdxcode/mise
+
 sudo dnf upgrade
 
 sudo dnf group install "development-tools"
 
-echo "-- dnf start --"
+echo "------------ dnf start ------------"
 while read -r app; do
     sudo dnf install -y "$app"
 done <"$APP_PATH"/packages/dnf
-echo "--- dnf end ---"
+echo "------------  dnf end  ------------"

@@ -59,9 +59,8 @@ kdenlive
 keepass
 keepassxc
 libxml2
+mise
 mousepad
-nodejs
-npm
 nss-tools
 openssl
 obs-studio
@@ -97,6 +96,5 @@ vim
 vlc
 wireshark
 yamllint
-yarnpkg
 zsh
 zoxide

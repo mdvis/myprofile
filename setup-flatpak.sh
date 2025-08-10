@@ -11,8 +11,8 @@ APP_PATH="${HOME}/.${APP_NAME}"
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-echo "-- flatpak start --"
+echo "------------ flatpak start ------------"
 while read -r app; do
     sudo flatpak install -y flathub "$app"
 done <"$APP_PATH"/packages/flatpak
-echo "--- flatpak end ---"
+echo "------------  flatpak end  ------------"

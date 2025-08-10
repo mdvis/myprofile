@@ -13,12 +13,10 @@ net.hovancik.Stretchly
 org.cryptomator.Cryptomator
 org.freac.freac
 org.freecad.FreeCAD
-org.freefilesync.FreeFileSync
 org.freeplane.App
 org.gnome.gitlab.somas.Apostrophe
+org.gnome.meld
 org.localsend.localsend_app
-org.wezfurlong.wezterm
 com.google.Chrome
 com.mongodb.Compass
 com.usebottles.bottles
-com.wps.Office
