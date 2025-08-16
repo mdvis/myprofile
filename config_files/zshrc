@@ -1,6 +1,6 @@
 # sys
 export GPG_TTY=$(tty)
-export EDITOR=nvim
+export EDITOR=vim
 export VISUAL=code
 
 export LC_ALL=
