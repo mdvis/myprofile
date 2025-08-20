@@ -13,11 +13,11 @@
     gpgsign = false
     verbose = true
 [merge]
-    tool = code
+    tool = meld
     ff = true
     conflictstyle = zdiff3
 [diff]
-    tool = code
+    tool = meld
     algorithm = histogram
     colorMoved = plain
 [mergetool]
@@ -34,10 +34,6 @@
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
-[difftool "code"]
-    cmd = "code --wait --diff  $LOCAL $REMOTE"
-[mergetool "code"]
-    cmd = "code --wait $MERGED"
 [includeIf "gitdir:~/Code/work/"]
     path = ~/.gitconfig_work
 [includeIf "gitdir:~/Notes/"]
