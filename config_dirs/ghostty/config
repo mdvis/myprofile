@@ -1,5 +1,6 @@
 theme = light:GruvboxDark,dark:GruvboxDark
 
+# font-family = "SSS"
 font-family = "Source Code Pro"
 font-family = "Maple Mono CN"
 font-family = "Symbols Nerd Font"
