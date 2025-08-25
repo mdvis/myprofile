@@ -67,3 +67,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 if [[ ":$FPATH:" != *":/Users/mdvis/.zsh/completions:"* ]]; then
     export FPATH="/Users/mdvis/.zsh/completions:$FPATH"
 fi
+
+export HUSKY=0 # Disables all Git hooks
