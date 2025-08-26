@@ -39,13 +39,13 @@
 [includeIf "gitdir:~/Notes/"]
     path = ~/.gitconfig_notes
 [gpg]
-    program = /opt/homebrew/bin/gpg
+    program = ~/.local/bin/gpg
 [http]
     lowSpeedLimit = 0
     lowSpeedTime = 3600
     postBuffer = 524288000
 [cola]
-    fontdiff = KSS,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+    fontdiff = SSS,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
     blameviewer = git gui blame
 [gui]
     editor = code
