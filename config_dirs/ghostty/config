@@ -1,12 +1,9 @@
 theme = light:GruvboxDark,dark:GruvboxDark
 
-# font-family = "SSS"
-font-family = "Source Code Pro"
-font-family = "Maple Mono CN"
-font-family = "Symbols Nerd Font"
+font-family = "SMS"
 
 font-size = 14
 
-# command = "$HOME/.local/bin/tmux"
+command = "$HOME/.local/bin/tmux"
 
 quit-after-last-window-closed = true
