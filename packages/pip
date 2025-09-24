@@ -1,0 +1,6 @@
+cmakelang
+djlint
+gitlint
+jedi
+sqlfluff
+vim-vint

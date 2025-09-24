@@ -1,0 +1,9 @@
+theme = light:GruvboxDark,dark:GruvboxDark
+
+font-family = "SMS"
+
+font-size = 14
+
+command = "$HOME/.local/bin/tmux"
+
+quit-after-last-window-closed = true

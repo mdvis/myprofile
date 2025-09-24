@@ -1,0 +1,113 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Default settings for all files
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+# max_line_length = 80
+
+# Use 2 spaces for default indentation (Markdown, JSON, YAML, etc.)
+[*.{md,json,jsonc,yml,yaml,toml,graphql,gql,xml}]
+indent_style = space
+indent_size = 2
+
+# C++ files
+[*.{c,cc,cpp,cxx,h,hh,hpp,hxx,inl,ipp}]
+indent_style = space
+indent_size = 2
+
+# SQL files
+[*.sql]
+indent_style = space
+indent_size = 4
+
+# Python files (PEP 8: 4 spaces, 79 char line limit)
+[*.{py,pyi}]
+indent_style = space
+indent_size = 4
+max_line_length = 79
+max_doc_length = 72
+
+# JavaScript files
+[*.{js,cjs,mjs}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# JSX files (React)
+[*.jsx]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# TypeScript files
+[*.{ts,cts,mts}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# TSX files (React)
+[*.tsx]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# Vue files
+[*.vue]
+indent_style = space
+indent_size = 2
+
+# Rust files
+[*.rs]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+
+# Makefiles (use tabs)
+[*.{mk,makefile,Makefile}]
+indent_style = tab
+
+# Java files
+[*.java]
+indent_style = space
+indent_size = 4
+
+# Lua files
+[*.lua]
+indent_style = space
+indent_size = 2
+
+# CSS files (including preprocessors)
+[*.{css,scss,sass,less}]
+indent_style = space
+indent_size = 2
+
+# HTML files
+[*.{html,htm,xhtml}]
+indent_style = space
+indent_size = 2
+
+# Shell scripts
+[*.{sh,bash}]
+indent_style = space
+indent_size = 2
+
+# Configuration files
+[.env*]
+indent_style = space
+indent_size = 2
+
+# Go files (use tabs per Go standards)
+[*.go]
+indent_style = tab
+indent_size = 8
+tab_width = 8
+
+# This file (editorconfig)
+[.editorconfig]
+indent_style = space
+indent_size = 2
