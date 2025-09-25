@@ -30,6 +30,9 @@
 
     alias glg="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
     alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
+    alias pu="git pull"
+    alias pU="git push"
+    alias uU="git pull && git push"
 
     alias lg='lazygit'
 # }
