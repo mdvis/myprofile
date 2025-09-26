@@ -6,14 +6,14 @@ working_directory = "/Users/mdvis/Code"
 TERM = "xterm-256color"
 
 [font.normal]
-family = "SSS"
+family = "SMS"
 style = "Regular"
 
 [font]
-size = 14.0
+size = 16.0
 
 [terminal.shell]
 program = "/Users/mdvis/.local/bin/tmux"
 
 [cursor]
-style = "Beam"
+style = "Block"
