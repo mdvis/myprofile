@@ -1,5 +1,11 @@
 [general]
-import = ["./theme/Gruvbox_Dark.toml"]
+# import = ["./theme/catppuccin/catppuccin_frappe.toml"]
+# import = ["./theme/catppuccin/catppuccin_macchiato.toml"]
+import = ["./theme/catppuccin/catppuccin_mocha.toml"]
+# import = ["./theme/gruvbox/gruvbox_dark.toml"]
+# import = ["./theme/gruvbox/gruvbox_material.toml"]
+# import = ["./theme/gruvbox/gruvbox_material_hard_dark.toml"]
+# import = ["./theme/gruvbox/gruvbox_material_medium_dark.toml"]
 working_directory = "/Users/mdvis/Code"
 
 [env]
