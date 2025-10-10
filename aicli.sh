@@ -4,12 +4,12 @@
 # date: 2025-09-20
 # ------
 
+# @openai/codex
+# @volcengine/vecli
+# @continuedev/cli
+# @anthropic-ai/claude-code
 pnpm add --global \
     @qwen-code/qwen-code@latest \
-    @anthropic-ai/claude-code \
     @google/gemini-cli \
     opencode-ai@latest \
-    @volcengine/vecli \
-    @charmland/crush \
-    @continuedev/cli \
-    @openai/codex
+    @charmland/crush
