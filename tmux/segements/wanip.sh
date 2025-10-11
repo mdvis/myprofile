@@ -8,7 +8,7 @@ run_segment() {
     fi
 
     if [ -n "$wan_ip" ]; then
-        echo "#[fg=colour255,bg=colour6] 󰖟 ${wan_ip} #[default]"
+        echo "#[fg=colour255,bg=colour9] 󰖟 ${wan_ip} #[default]"
     fi
 
     return 0

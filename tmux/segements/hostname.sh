@@ -2,6 +2,6 @@
 
 run_segment() {
     host=$(hostname)
-    echo "#[fg=colour255,bg=colour2] 󰌢 ${host} #[default]"
+    echo "#[fg=colour255,bg=colour28] 󰌢 ${host} #[default]"
     return 0
 }

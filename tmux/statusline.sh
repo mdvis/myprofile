@@ -2,8 +2,8 @@
 
 TMUX_POWERLINE_DIR_HOME=$(dirname "$0")
 TMUX_POWERLINE_DIR_SEGMENTS="${TMUX_POWERLINE_DIR_HOME}/segements"
-left=(hostname lan_ip wan_ip)
-right=(branch session pwd)
+left=(hostname lanip wanip)
+right=(session)
 output=""
 if [[ "left" = "$1" ]]; then
     for segement in "${left[@]}"; do

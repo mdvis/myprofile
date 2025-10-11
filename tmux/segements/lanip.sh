@@ -10,6 +10,6 @@ run_segment() {
         [[ -n "${lan_ip}" ]] && break
     done
 
-    echo "#[fg=colour255,bg=colour3] 󰌗 ${lan_ip-N/a} #[default]"
+    echo "#[fg=colour255,bg=colour202] 󰌗 ${lan_ip-N/a} #[default]"
     return 0
 }
