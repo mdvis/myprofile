@@ -11,6 +11,10 @@ export LC_COLLATE="zh_CN.UTF-8"
 export LC_NUMERIC="zh_CN.UTF-8"
 export LC_MESSAGES="zh_CN.UTF-8"
 export LC_MONETARY="zh_CN.UTF-8"
+
+export PATH="${HOME}/.local/bin:$PATH"
+
+[[ -f ~/.alias ]] && source ~/.alias
 # sys end
 
 # homebrew
@@ -24,8 +28,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # homebrew end
 
-export PATH="/opt/quarkdown/bin:$PATH"
-
 # go
 export PATH="${HOME}/go/bin:$PATH"
 export GO111MODULE=on
@@ -36,15 +38,21 @@ export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-
 export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
 # fzf end
 
-[[ -f ~/.alias ]] && source ~/.alias
-
-export PATH="${HOME}/.local/bin:$PATH"
+# rust
 export PATH="${HOME}/.cargo/bin:$PATH"
+# rust end
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
-eval "$(mise activate zsh)"
+# husky
+export HUSKY=0 # Disables all Git hooks
+# husky end
+
+# pnpm
+export PNPM_HOME="/Users/mdvis/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # antigen
 source "$HOME/.antigen.zsh"
@@ -55,17 +63,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 # antigen  end
 
-# bun completions
-[ -s "/Users/mdvis/.bun/_bun" ] && source "/Users/mdvis/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/Users/mdvis/.zsh/completions:"* ]]; then
-    export FPATH="/Users/mdvis/.zsh/completions:$FPATH"
-fi
-
-export HUSKY=0 # Disables all Git hooks
+# other tools
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
+eval "$(mise activate zsh)"
+# other tools end

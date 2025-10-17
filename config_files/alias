@@ -32,7 +32,6 @@
     alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
     alias pu="git pull"
     alias pU="git push"
+    alias pUf="git push -f"
     alias uU="git pull && git push"
-
-    alias lg='lazygit'
 # }
