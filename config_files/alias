@@ -28,10 +28,17 @@
     prettyStr="$shotCommitHash $dataStr $commitName $commitMsg"
     dateFmtStr='%m/%d %H:%M'
 
-    alias glg="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
-    alias gfc="git status --short | awk '{print \$2}' | xargs rg console"
-    alias pu="git pull"
-    alias pU="git push"
-    alias pUf="git push -f"
-    alias uU="git pull && git push"
+    alias glog="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
+
+    alias gpl="git pull"
+    alias gph="git push"
+    alias gpf="git push -f"
+    alias gplh="git pull && git push"
+
+    alias gstat="git status"
+
+    alias gstas="git stash"
+    alias gstasp="git stash pop"
+
+    alias lzg="lazygit"
 # }
