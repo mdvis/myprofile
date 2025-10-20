@@ -17,6 +17,7 @@ list=(
     @augmentcode/auggie
     @qodo/command
     cline
+    @qoder-ai/qodercli
 )
 
 install() {
