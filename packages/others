@@ -1,0 +1,7 @@
+dnf
+    WoeUSB
+flatpkg
+    com.google.Chrome
+    com.usebottles.bottles
+snap
+    logisim-evolution
