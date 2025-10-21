@@ -1,3 +1,4 @@
+@base-x
 GraphicsMagick
 ImageMagick
 NetworkManager
@@ -40,6 +41,7 @@ git-cola
 git-lfs
 gitk
 glslang
+gnome-session-xsession
 gnupg
 golang
 goldendict
@@ -49,6 +51,7 @@ hadolint
 hdparm
 highlight
 httpie
+hyprland
 i3
 i3lock
 i3status
@@ -63,6 +66,7 @@ libxml2
 meld
 mise
 mousepad
+niri
 nodejs
 nodejs-npm
 nss-tools
@@ -101,6 +105,7 @@ wireshark
 wl-clipboard
 xdg-desktop-portal-wlr
 xdg-desktop-portal-gtk
+xorg-x11-server-Xorg
 yamllint
 zsh
 zoxide
