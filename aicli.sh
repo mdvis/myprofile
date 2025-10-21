@@ -7,17 +7,13 @@
 
 list=(
     @google/gemini-cli
+    cline
     @openai/codex
     @anthropic-ai/claude-code
     @continuedev/cli
     opencode-ai
     @qwen-code/qwen-code
-    @charmland/crush
     @github/copilot
-    @augmentcode/auggie
-    @qodo/command
-    cline
-    @qoder-ai/qodercli
 )
 
 install() {
