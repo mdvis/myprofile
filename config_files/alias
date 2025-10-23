@@ -40,5 +40,7 @@
     alias gstas="git stash"
     alias gstasp="git stash pop"
 
+    alias gdif="git diff"
+
     alias lzg="lazygit"
 # }
