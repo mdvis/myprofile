@@ -17,7 +17,7 @@
     PROXY_HTTP="$PROXY_HTTP_ADDRESS:$PROXY_PORT"
 
     alias sp="export all_proxy=$PROXY_SOCKET; export http_proxy=$PROXY_HTTP; export https_proxy=$PROXY_HTTP"
-    alias unsp="unset all_proxy; unset http_proxy; unset https_proxy;"
+    alias un="unset all_proxy; unset http_proxy; unset https_proxy;"
 # }
 
 # Git {
@@ -28,19 +28,19 @@
     prettyStr="$shotCommitHash $dataStr $commitName $commitMsg"
     dateFmtStr='%m/%d %H:%M'
 
-    alias glog="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
+    alias glg="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
 
     alias gpl="git pull"
     alias gph="git push"
     alias gpf="git push -f"
-    alias gplh="git pull && git push"
+    alias glh="git pull && git push"
 
-    alias gstat="git status"
+    alias gst="git status"
 
-    alias gstas="git stash"
-    alias gstasp="git stash pop"
+    alias gsh="git stash"
+    alias gsp="git stash pop"
 
-    alias gdif="git diff"
+    alias gdf="git diff"
 
     alias lzg="lazygit"
 # }
