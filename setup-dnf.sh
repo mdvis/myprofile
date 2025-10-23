@@ -15,6 +15,7 @@ sudo dnf config-manager addrepo --overwrite --from-repofile=https://cli.github.c
 sudo dnf install gh --repo gh-cli
 
 sudo dnf copr enable jdxcode/mise
+sudo dnf copr enable dejan/lazygit
 
 sudo dnf upgrade
 
