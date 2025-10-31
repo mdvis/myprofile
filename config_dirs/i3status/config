@@ -29,11 +29,11 @@ ethernet _first_ {
 }
 disk "/" {
     #format = " %free / %avail / %total / %used"
-    format = " %used/%free"
+    format = " %used/%total"
 }
 battery 0 {
     format = "%status %percentage %remaining %emptytime"
-    format_down = "󱉝 NO BAT"
+    format_down = ""
     status_chr = "󰂄"
     status_bat = "󱊣"
     status_unk = "󰂃"
@@ -42,13 +42,14 @@ battery 0 {
     low_threshold = 10
 }
 memory {
-    format = " %used/%free"
+    # format = " %used/%free"
+    format = " %used/%total"
     threshold_degraded = "10%"
-    format_degraded = "MEMORY: %available / %free"
+    format_degraded = "MEMORY: %available / %total"
 }
 tztime local {
     #format = " %y/%m/%d  %H:%M"
-    format = " %d %H:%M"
+    format = " %m/%d  %H:%M"
 }
 load {
     format = "󰇺 %5min"
