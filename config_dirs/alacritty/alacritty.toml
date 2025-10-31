@@ -1,19 +1,25 @@
 [general]
-import = ["./theme/Gruvbox_Dark.toml"]
-working_directory = "/Users/mdvis/Code"
+# import = ["./theme/catppuccin/catppuccin_frappe.toml"]
+# import = ["./theme/catppuccin/catppuccin_macchiato.toml"]
+import = ["./theme/catppuccin/catppuccin_mocha.toml"]
+# import = ["./theme/gruvbox/gruvbox_dark.toml"]
+# import = ["./theme/gruvbox/gruvbox_material.toml"]
+# import = ["./theme/gruvbox/gruvbox_material_hard_dark.toml"]
+# import = ["./theme/gruvbox/gruvbox_material_medium_dark.toml"]
+working_directory = "Code"
 
 [env]
 TERM = "xterm-256color"
 
 [font.normal]
-family = "SSS"
+family = "SMS"
 style = "Regular"
 
 [font]
-size = 14.0
+size = 16.0
 
 [terminal.shell]
 program = "/Users/mdvis/.local/bin/tmux"
 
 [cursor]
-style = "Beam"
+style = "Block"
