@@ -6,13 +6,10 @@
 # ------
 
 list=(
-    @qwen-code/qwen-code
-    @charmland/crush
     @github/copilot
     @google/gemini-cli
     @anthropic-ai/claude-code
     @openai/codex
-    @iflow-ai/iflow-cli
 )
 
 install() {
