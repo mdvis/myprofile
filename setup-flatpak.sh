@@ -15,6 +15,8 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 if ! [[ "$ARCH" =~ "aarch64" || "$ARCH" =~ "arm64" ]]; then
     sudo flatpak install -y flathub com.google.Chrome
     sudo flatpak install -y flathub com.usebottles.bottles
+    sudo flatpak install -y com.super_productivity.SuperProductivity
+    sudo flatpak install -y org.upscayl.Upscayl
 fi
 
 echo "------------ flatpak start ------------"

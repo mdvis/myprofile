@@ -5,7 +5,6 @@ org.gnome.Platform//47
 com.tencent.WeChat
 com.visualstudio.code
 io.github.peazip.PeaZip
-io.gitlab.news_flash.NewsFlash
 md.obsidian.Obsidian
 net.hovancik.Stretchly
 no.mifi.losslesscut
@@ -13,3 +12,5 @@ org.gnome.meld
 org.localsend.localsend_app
 org.dbgate.DbGate
 org.qbittorrent.qBittorrent
+com.github.tchx84.Flatseal
+io.github.flattool.Ignition
