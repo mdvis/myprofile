@@ -26,3 +26,17 @@ while read -r app; do
     sudo dnf install -y "$app"
 done <"$APP_PATH"/packages/dnf
 echo "------------  dnf end  ------------"
+
+if [[ $XDG_SESSION_TYPE == 'wayland' ]]; then
+    echo "------------ dnf start ------------"
+    while read -r app; do
+        sudo dnf install -y "$app"
+    done <"$APP_PATH"/packages/dnf.wayland
+    echo "------------  dnf end  ------------"
+else
+    echo "------------ dnf start ------------"
+    while read -r app; do
+        sudo dnf install -y "$app"
+    done <"$APP_PATH"/packages/dnf.xorg
+    echo "------------  dnf end  ------------"
+fi
