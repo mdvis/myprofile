@@ -1,15 +1,5 @@
 [general]
-# import = ["./theme/catppuccin/catppuccin_frappe.toml"]
-# import = ["./theme/catppuccin/catppuccin_macchiato.toml"]
-import = ["./theme/catppuccin/catppuccin_mocha.toml"]
-# import = ["./theme/gruvbox/gruvbox_dark.toml"]
-# import = ["./theme/gruvbox/gruvbox_material.toml"]
-# import = ["./theme/gruvbox/gruvbox_material_hard_dark.toml"]
-# import = ["./theme/gruvbox/gruvbox_material_medium_dark.toml"]
 working_directory = "Code"
-
-[env]
-TERM = "xterm-256color"
 
 [font.normal]
 family = "SMS"
@@ -19,7 +9,124 @@ style = "Regular"
 size = 16.0
 
 [terminal.shell]
-program = "/Users/mdvis/.local/bin/tmux"
+program = "/opt/homebrew/bin/tmux"
 
-[cursor]
-style = "Block"
+[window]
+opacity = 0.95
+blur = true
+
+[cursor.style]
+shape = "Block"
+blinking = "Always"
+
+[selection]
+save_to_clipboard = true
+
+# # Colors (Gruvbox dark)
+
+# # Default colors
+# [colors.primary]
+# # hard contrast background = = '#1d2021'
+# background = '#282828'
+# # soft contrast background = = '#32302f'
+# foreground = '#ebdbb2'
+
+# # Normal colors
+# [colors.normal]
+# black   = '#282828'
+# red     = '#cc241d'
+# green   = '#98971a'
+# yellow  = '#d79921'
+# blue    = '#458588'
+# magenta = '#b16286'
+# cyan    = '#689d6a'
+# white   = '#a89984'
+
+# # Bright colors
+# [colors.bright]
+# black   = '#928374'
+# red     = '#fb4934'
+# green   = '#b8bb26'
+# yellow  = '#fabd2f'
+# blue    = '#83a598'
+# magenta = '#d3869b'
+# cyan    = '#8ec07c'
+# white   = '#ebdbb2'
+
+# Colors (Catppuccin_Mocha)
+
+[colors.primary]
+background = '#1E1E2E' # base
+foreground = '#CDD6F4' # text
+# Bright and dim foreground colors
+dim_foreground = '#CDD6F4' # text
+bright_foreground = '#CDD6F4' # text
+
+# Cursor colors
+[colors.cursor]
+text = '#1E1E2E' # base
+cursor = '#F5E0DC' # rosewater
+
+[colors.vi_mode_cursor]
+text = '#1E1E2E' # base
+cursor = '#B4BEFE' # lavender
+
+# Search colors
+[colors.search.matches]
+foreground = '#1E1E2E' # base
+background = '#A6ADC8' # subtext0
+
+[colors.search.focused_match]
+foreground = '#1E1E2E' # base
+background = '#A6E3A1' # green
+
+[colors.footer_bar]
+foreground = '#1E1E2E' # base
+background = '#A6ADC8' # subtext0
+
+# Keyboard regex hints
+[colors.hints.start]
+foreground = '#1E1E2E' # base
+background = '#F9E2AF' # yellow
+
+[colors.hints.end]
+foreground = '#1E1E2E' # base
+background = '#A6ADC8' # subtext0
+
+# Selection colors
+[colors.selection]
+text = '#1E1E2E' # base
+background = '#F5E0DC' # rosewater
+
+# Normal colors
+[colors.normal]
+black = '#45475A' # surface1
+red = '#F38BA8' # red
+green = '#A6E3A1' # green
+yellow = '#F9E2AF' # yellow
+blue = '#89B4FA' # blue
+magenta = '#F5C2E7' # pink
+cyan = '#94E2D5' # teal
+white = '#BAC2DE' # subtext1
+
+# Bright colors
+[colors.bright]
+black = '#585B70' # surface2
+red = '#F38BA8' # red
+green = '#A6E3A1' # green
+yellow = '#F9E2AF' # yellow
+blue = '#89B4FA' # blue
+magenta = '#F5C2E7' # pink
+cyan = '#94E2D5' # teal
+white = '#A6ADC8' # subtext0
+
+# Dim colors
+[colors.dim]
+black = '#45475A' # surface1
+red = '#F38BA8' # red
+green = '#A6E3A1' # green
+yellow = '#F9E2AF' # yellow
+blue = '#89B4FA' # blue
+magenta = '#F5C2E7' # pink
+cyan = '#94E2D5' # teal
+white = '#BAC2DE' # subtext1

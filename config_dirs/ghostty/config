@@ -1,9 +1,16 @@
-theme = light:GruvboxDark,dark:GruvboxDark
+theme = Catppuccin Mocha
 
-font-family = "SMS"
-
+font-family = SMS
 font-size = 14
 
-command = "$HOME/.local/bin/tmux"
+command = /opt/homebrew/bin/tmux
+
+background-opacity = 0.90
+background-blur = true
+
+cursor-style-blink = true
+
+clipboard-read = allow
+clipboard-write = allow
 
 quit-after-last-window-closed = true

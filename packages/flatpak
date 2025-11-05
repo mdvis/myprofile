@@ -12,5 +12,6 @@ org.gnome.meld
 org.localsend.localsend_app
 org.dbgate.DbGate
 org.qbittorrent.qBittorrent
+org.wezfurlong.wezterm
 com.github.tchx84.Flatseal
 io.github.flattool.Ignition
