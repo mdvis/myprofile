@@ -225,4 +225,6 @@ bar {
     }
 }
 
-include ./config.d/*
+# include ./config.d/*
+exec /usr/libexec/sway-systemd/session.sh
+exec /usr/libexec/sway-systemd/assign-cgroups.py
