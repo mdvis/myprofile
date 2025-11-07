@@ -5,5 +5,5 @@ XTerm.termName: xterm-256color
 XTerm.vt100.locale: true
 XTerm.vt100.utf8: true
 
-XTerm.vt100.faceName: SauceCodePro Nerd Font Mono:size=14:antialias=true
+XTerm.vt100.faceName: SMS:size=14:antialias=true
 XTerm.vt100.font: 14x14
