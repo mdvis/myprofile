@@ -15,6 +15,14 @@ program = "/opt/homebrew/bin/tmux"
 opacity = 0.85
 blur = true
 
+[window.position]
+x = 0
+y = 0
+
+[window.dimensions]
+columns = 108
+lines = 25
+
 [cursor.style]
 shape = "Block"
 blinking = "Always"
