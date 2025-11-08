@@ -41,8 +41,6 @@ hadolint
 hdparm
 highlight
 httpie
-imhex
-inkscape
 java-21-openjdk
 java-21-openjdk-devel
 jq
@@ -56,7 +54,6 @@ nodejs
 nodejs-npm
 nss-tools
 openssl
-obs-studio
 p7zip
 pandoc
 pdfarranger
