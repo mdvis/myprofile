@@ -11,17 +11,17 @@ size = 16.0
 [terminal.shell]
 program = "/opt/homebrew/bin/tmux"
 
-[window]
-opacity = 0.85
-blur = true
+# [window]
+# opacity = 0.85
+# blur = true
 
 [window.position]
 x = 0
 y = 0
 
 [window.dimensions]
-columns = 108
-lines = 25
+columns = 128
+lines = 44
 
 [cursor.style]
 shape = "Block"
@@ -30,111 +30,70 @@ blinking = "Always"
 [selection]
 save_to_clipboard = true
 
-# # Colors (Gruvbox dark)
-
-# # Default colors
-# [colors.primary]
-# # hard contrast background = = '#1d2021'
-# background = '#282828'
-# # soft contrast background = = '#32302f'
-# foreground = '#ebdbb2'
-
-# # Normal colors
-# [colors.normal]
-# black   = '#282828'
-# red     = '#cc241d'
-# green   = '#98971a'
-# yellow  = '#d79921'
-# blue    = '#458588'
-# magenta = '#b16286'
-# cyan    = '#689d6a'
-# white   = '#a89984'
-
-# # Bright colors
-# [colors.bright]
-# black   = '#928374'
-# red     = '#fb4934'
-# green   = '#b8bb26'
-# yellow  = '#fabd2f'
-# blue    = '#83a598'
-# magenta = '#d3869b'
-# cyan    = '#8ec07c'
-# white   = '#ebdbb2'
-
 # Colors (Catppuccin_Mocha)
 
 [colors.primary]
-background = '#1E1E2E' # base
-foreground = '#CDD6F4' # text
-# Bright and dim foreground colors
-dim_foreground = '#CDD6F4' # text
-bright_foreground = '#CDD6F4' # text
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+dim_foreground = "#7f849c"
+bright_foreground = "#cdd6f4"
 
-# Cursor colors
 [colors.cursor]
-text = '#1E1E2E' # base
-cursor = '#F5E0DC' # rosewater
+text = "#1e1e2e"
+cursor = "#f5e0dc"
 
 [colors.vi_mode_cursor]
-text = '#1E1E2E' # base
-cursor = '#B4BEFE' # lavender
+text = "#1e1e2e"
+cursor = "#b4befe"
 
-# Search colors
 [colors.search.matches]
-foreground = '#1E1E2E' # base
-background = '#A6ADC8' # subtext0
+foreground = "#1e1e2e"
+background = "#a6adc8"
 
 [colors.search.focused_match]
-foreground = '#1E1E2E' # base
-background = '#A6E3A1' # green
+foreground = "#1e1e2e"
+background = "#a6e3a1"
 
 [colors.footer_bar]
-foreground = '#1E1E2E' # base
-background = '#A6ADC8' # subtext0
+foreground = "#1e1e2e"
+background = "#a6adc8"
 
-# Keyboard regex hints
 [colors.hints.start]
-foreground = '#1E1E2E' # base
-background = '#F9E2AF' # yellow
+foreground = "#1e1e2e"
+background = "#f9e2af"
 
 [colors.hints.end]
-foreground = '#1E1E2E' # base
-background = '#A6ADC8' # subtext0
+foreground = "#1e1e2e"
+background = "#a6adc8"
 
-# Selection colors
 [colors.selection]
-text = '#1E1E2E' # base
-background = '#F5E0DC' # rosewater
+text = "#1e1e2e"
+background = "#f5e0dc"
 
-# Normal colors
 [colors.normal]
-black = '#45475A' # surface1
-red = '#F38BA8' # red
-green = '#A6E3A1' # green
-yellow = '#F9E2AF' # yellow
-blue = '#89B4FA' # blue
-magenta = '#F5C2E7' # pink
-cyan = '#94E2D5' # teal
-white = '#BAC2DE' # subtext1
+black = "#45475a"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#bac2de"
 
-# Bright colors
 [colors.bright]
-black = '#585B70' # surface2
-red = '#F38BA8' # red
-green = '#A6E3A1' # green
-yellow = '#F9E2AF' # yellow
-blue = '#89B4FA' # blue
-magenta = '#F5C2E7' # pink
-cyan = '#94E2D5' # teal
-white = '#A6ADC8' # subtext0
+black = "#585b70"
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+magenta = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#a6adc8"
 
-# Dim colors
-[colors.dim]
-black = '#45475A' # surface1
-red = '#F38BA8' # red
-green = '#A6E3A1' # green
-yellow = '#F9E2AF' # yellow
-blue = '#89B4FA' # blue
-magenta = '#F5C2E7' # pink
-cyan = '#94E2D5' # teal
-white = '#BAC2DE' # subtext1
+[[colors.indexed_colors]]
+index = 16
+color = "#fab387"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#f5e0dc"
