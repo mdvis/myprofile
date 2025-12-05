@@ -1,0 +1,62 @@
+[user]
+    name = dewei.ma
+    email = xnmageis@outlook.com
+    signingkey = 1031458D
+[core]
+    editor = vim
+    excludesfile = /Users/mdvis/.gitignore_global
+    autocrlf = input
+    safecrlf = true
+[commit]
+    template = ~/.gitmessages
+    # gpgsign = true
+    gpgsign = false
+    verbose = true
+[merge]
+    tool = meld
+    ff = true
+    conflictstyle = zdiff3
+[diff]
+    tool = meld
+    algorithm = histogram
+    colorMoved = plain
+[mergetool]
+    keepBackup = false
+[difftool]
+    prompt = false
+[pull]
+    rebase = false
+    ff = false
+[init]
+    defaultbranch = main
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+[includeIf "gitdir:~/Code/work/"]
+    path = ~/.gitconfig_work
+[includeIf "gitdir:~/Notes/"]
+    path = ~/.gitconfig_notes
+[gpg]
+    program = ~/.local/bin/gpg
+[http]
+    lowSpeedLimit = 0
+    lowSpeedTime = 3600
+    postBuffer = 524288000
+[cola]
+    fontdiff = SSS,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+    blameviewer = git gui blame
+[gui]
+    editor = code
+    historybrowser = gitk
+[branch]
+    sort = -committerdate
+[column]
+    ui = auto
+[tag]
+    sort = version:refname
+[push]
+    autoSetupRemote = true
+[rerere]
+    enabled = true

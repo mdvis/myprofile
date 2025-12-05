@@ -1,0 +1,43 @@
+# Profile {
+    alias l1='ls -1 -F --color'
+    alias la='ls -lha -F --color'
+    alias ll='ls -lh -F --color'
+    alias ls='ls -F --color'
+
+    alias cls='clear'
+# }
+
+# Proxy {
+    PROXY_PORT=7890
+
+    PROXY_SOCKET_ADDRESS='socks5://127.0.0.1'
+    PROXY_HTTP_ADDRESS='http://127.0.0.1'
+
+    PROXY_SOCKET="$PROXY_SOCKET_ADDRESS:$PROXY_PORT"
+    PROXY_HTTP="$PROXY_HTTP_ADDRESS:$PROXY_PORT"
+
+    alias sp="export ALL_PROXY=$PROXY_SOCKET; export HTTP_PROXY=$PROXY_HTTP; export HTTPS_PROXY=$PROXY_HTTP"
+    alias un="unset ALL_PROXY; unset HTTP_PROXY; unset HTTPS_PROXY;"
+    sp
+# }
+
+# Git {
+    shotCommitHash='%C(yellow)%h'
+    dataStr='%C(red)%ad'
+    commitName='%<(9,trunc)%C(blue)%cn'
+    commitMsg='%<(40,trunc)%C(reset)%s'
+    prettyStr="$shotCommitHash $dataStr $commitName $commitMsg"
+    dateFmtStr='%m/%d %H:%M'
+
+    alias glg="git log --date=format:\"$dateFmtStr\" --pretty='$prettyStr'"
+
+    alias gpl="git pull"
+    alias gph="git push"
+
+    alias gst="git status"
+
+    alias gdf="git diff"
+
+    alias lzg="lazygit"
+    alias lzd="lazydocker"
+# }
