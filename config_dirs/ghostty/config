@@ -1,0 +1,16 @@
+theme = Catppuccin Mocha
+
+font-family = SMS
+font-size = 14
+
+command = /opt/homebrew/bin/tmux
+
+cursor-style-blink = true
+
+clipboard-read = allow
+clipboard-write = allow
+
+quit-after-last-window-closed = true
+
+window-padding-x = 0,0
+window-padding-y = 0,0

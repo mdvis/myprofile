@@ -1,0 +1,60 @@
+---
+# 箭头函数一个参数时是否要有小括号 "<avoid|always>"
+arrowParens: 'always'
+
+# JSX 元素的 > 放在最后一行的末尾，而不是单独放在下一行
+bracketSameLine: true
+
+# 在对象, 数组括号与文字之间加空格
+bracketSpacing: true
+
+# 换行符使用 lf 结尾 "<auto|lf|crlf|cr>"
+endOfLine: 'lf'
+
+# html 折行 "<css|strict空格敏感|ignore空格不敏感>"
+htmlWhitespaceSensitivity: 'css'
+
+# 插入开头的 @prettier
+insertPragma: false
+
+# 在JSX中使用单引号而不是双引号
+jsxSingleQuote: false
+
+# 超过最大值换行
+printWidth: 80
+
+# markdown 换行 "<preserve|always|never>"
+proseWrap: 'preserve'
+
+# 更改引用对象属性的时间 "<as-needed|consistent|preserve>"
+quoteProps: 'as-needed'
+
+# 不需要开头的 @prettier
+requirePragma: false
+
+# 结尾不用分号
+semi: true
+
+# 在 HTML、Vue 和 JSX 中强制每行使用单一属性
+singleAttributePerLine: true
+
+# 使用单引号
+singleQuote: true
+
+# 缩进字节数
+tabWidth: 2
+
+# 多行时尽可能打印尾随逗号 "<none|es5|all>" 默认none
+trailingComma: 'all'
+
+# 使用 .editorconfig
+useEditorConfig: true
+
+# 使用制表符而不是空格缩进行
+useTabs: false
+
+# Vue文件脚本和样式标签缩进
+vueIndentScriptAndStyle: false
+
+# 格式化 node_modules 中的文件
+withNodeModules: false
