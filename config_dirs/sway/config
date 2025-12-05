@@ -1,0 +1,264 @@
+# base
+# Mod1 Alt / Mod4 Win
+set $mod Mod4
+set $menu_s anyrun
+set $menu bemenu-run
+set $font pango:SMS 14
+set $term alacritty
+set $thunder foot --app-id=dropdown
+set $file thunar
+set $browser firefox
+set $clash flclash
+set $chat wechat
+set $lib calibre
+set $office wps
+set $editor vim
+set $wallpaper ~/.myprofile/wallpaper/background.jpg
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+
+font $font
+
+input * {
+    repeat_delay 250
+    repeat_rate 60
+}
+
+input type:keyboard {
+    xkb_layout "us"
+    xkb_options "caps:ctrl"
+    xkb_options "ctrl:swapcaps"
+}
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+    dwt enabled
+}
+
+# border and gaps
+default_border pixel 2
+default_floating_border pixel 2
+smart_gaps on
+gaps inner 8
+gaps outer 4
+
+# drag floating windows with $mod
+floating_modifier $mod
+
+# auto back and forth
+workspace_auto_back_and_forth yes
+
+# key bindings
+bindsym F12 exec $thunder
+bindsym alt+space exec $menu_s
+bindsym $mod+d exec $menu
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+q kill
+bindsym $mod+F1 exec $file
+bindsym $mod+F2 exec $browser
+bindsym $mod+F3 exec $clash
+
+# focus and move
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# split
+bindsym $mod+b split h
+bindsym $mod+v split v
+bindsym $mod+q split toggle
+
+# layout
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# floating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+Shift+s sticky toggle
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+
+# move window to workspace
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8
+
+# move window to workspace and switch to it
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+
+# application shortcuts
+set $mode_application (t)hunar, (f)irefox, (w)ehat, (c)lash, (o)ffice, (b)ooks
+bindsym $mod+9 mode "$mode_application"
+
+mode "$mode_application" {
+    bindsym t exec $file, mode "default"
+    bindsym f exec $browser, mode "default"
+    bindsym w exec $chat, mode "default"
+    bindsym c exec $clash, mode "default"
+    bindsym o exec $office, mode "default"
+    bindsym b exec $lib, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# system shortcuts
+set $mode_system (l)ock, (s)uspend, (u)ser, (r)eboot, (e)xit
+bindsym $mod+0 mode "$mode_system"
+
+mode "$mode_system" {
+    bindsym l exec swaylock -f -c 282A36, mode "default"
+    bindsym s exec systemctl suspend, mode "default"
+    bindsym r exec systemctl reboot, mode "default"
+    bindsym h exec systemctl hibernate, mode "default"
+    bindsym e exec systemctl poweroff, mode "default"
+    bindsym u exec swaymsg exit, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# reload and restart
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+# resize window
+bindsym $mod+r mode "resize"
+
+mode "resize" {
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# colors
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F8F8F2
+
+# effects
+corner_radius 8
+shadows enable
+shadows_on_csd enable
+blur enable
+blur_radius 12
+blur_passes 3
+
+layer_effects "waybar" blur enable & shadows enable
+
+# startup
+exec swaybg --image $wallpaper --mode fill
+exec mako
+exec waybar
+
+exec_always kanshi
+# output * bg $wallpaper fill
+# output eDP-1 resolution 1920x1080 position 0,0
+
+# lock
+exec swayidle -w \
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 600 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -f -c 000000'
+
+# flatpak 版,class 而非 app_id
+assign [app_id="localsend_app"] $ws8
+assign [class="(?i)localsend"] $ws8
+# for_window [class=".*"] border pixel 2
+
+exec swaymsg "workspace 9:clash; exec $clash"
+exec swaymsg "workspace 8:editor; exec $term -e $editor"
+
+set $ws1 '9:󰄛  clash'
+set $ws1 '8:  vim'
+
+# audio
+# volume_step 5
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.5 && \
+    wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED || \
+    notify-send -t 800 -a "Volume" "  $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2*100"%"}')"
+
+# volume_step -5
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && \
+    wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED || \
+    notify-send -t 800 -a "Volume" "  $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2*100"%"}')"
+
+# toggle mute
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && \
+    wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && \
+    notify-send -t 800 -a "Audio" "  Muted" || \
+    notify-send -t 800 -a "Audio" "  Unmuted"
+
+# mic
+bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && \
+    wpctl status | grep -q "(muted)" && \
+    notify-send -t 800 -a "Mic" "  Mic Muted" || \
+    notify-send -t 800 -a "Mic" "  Mic On"
+
+# brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# env
+exec export MOZ_ENABLE_WAYLAND=1
+exec export CLUTTER_BACKEND=wayland
+exec export SDL_VIDEODRIVER=wayland
+
+include /etc/sway/config.d/*

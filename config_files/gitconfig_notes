@@ -1,0 +1,5 @@
+[user]
+    name = notes
+    email = mdeve881101@gmail.com
+[commit]
+	gpgsign = false

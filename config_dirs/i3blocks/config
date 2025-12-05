@@ -1,0 +1,62 @@
+# i3blocks config converted from i3status
+# Place at ~/.config/i3blocks/config
+
+# Global defaults
+separator=true
+separator_block_width=15
+interval=5
+
+# Colors from i3status
+color_good=#50FA7B
+color_degraded=#F1FA8C
+color_bad=#FF5555
+
+#------------------------------------------------------------
+# Network
+#------------------------------------------------------------
+
+[wifi]
+full_text=󰖩
+command=/usr/libexec/i3blocks/wifi
+instance=wlan0  # Change to your wireless interface
+interval=5
+color=#50FA7B
+
+[ethernet]
+full_text=󰌗
+command=/usr/libexec/i3blocks/iface
+instance=eth0   # Change to your ethernet interface
+interval=5
+color=#50FA7B
+
+#------------------------------------------------------------
+# System
+#------------------------------------------------------------
+
+[disk]
+full_text=
+command=/usr/libexec/i3blocks/disk
+instance=/
+interval=30
+color=#50FA7B
+
+[memory]
+full_text=
+command=/usr/libexec/i3blocks/memory
+interval=5
+color=#50FA7B
+
+[battery]
+full_text=󱊣
+command=/usr/libexec/i3blocks/battery
+instance=0
+interval=30
+# Color changes automatically based on status
+
+#------------------------------------------------------------
+# Time
+#------------------------------------------------------------
+
+[time]
+command=date '+%m/%d  %H:%M'
+interval=5

@@ -1,0 +1,19 @@
+{
+  "words": [
+    "Deve",
+    "antd",
+    "umijs",
+    "classnames",
+    "rgba",
+    "Popconfirm",
+    "antv"
+  ],
+  "dictionaries": ["custom-dictionary"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-dictionary",
+      "path": "./.cspell/custom-dictionary.txt",
+      "addWords": true
+    }
+  ]
+}

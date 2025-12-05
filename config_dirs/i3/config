@@ -1,0 +1,220 @@
+# Mod1 Alt / Mod4 Win
+set $mod Mod4
+
+# set $the_font SauceCodePro Nerd Font
+set $the_font SMS
+
+font pango:$the_font 14
+
+new_window pixel 1
+new_float normal
+hide_edge_borders both
+for_window [class=".*"] border pixel 2
+
+# Performance optimizations
+focus_follows_mouse no
+focus_on_window_activation smart
+workspace_auto_back_and_forth yes
+force_display_urgency_hint 500 ms
+
+# Gaps configuration
+gaps inner 8px
+gaps outer 4px
+smart_gaps inverse_outer
+
+# Floating configuration
+floating_modifier $mod
+floating_minimum_size 75 x 50
+floating_maximum_size -1 x -1
+
+# Default orientations
+default_orientation auto
+workspace_layout default
+title_align left
+
+# Focus behavior
+focus_wrapping yes
+mouse_warping output
+popup_during_fullscreen smart
+
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec --no-startup-id foot --app_id=dropdown
+
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+d exec --no-startup-id rofi -show window
+
+bindsym $mod+F1 exec --no-startup-id thunar
+bindsym $mod+F2 exec --no-startup-id firefox
+bindsym $mod+F3 exec --no-startup-id flclash
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+bindsym $mod+b split h
+bindsym $mod+v split v
+bindsym $mod+q split toggle
+
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+s sticky toggle
+bindsym $mod+a focus parent
+
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8
+
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+
+bindsym $mod+9 mode "$mode_application"
+set $mode_application (t)hunar, (f)irefox, (w)ehat, (c)lash, (o)ffice, (b)ooks
+mode "$mode_application" {
+    bindsym t exec --no-startup-id thunar, mode "default"
+    bindsym f exec --no-startup-id firefox, mode "default"
+    bindsym w exec --no-startup-id wechat, mode "default"
+    bindsym c exec --no-startup-id flclash, mode "default"
+    bindsym o exec --no-startup-id wps, mode "default"
+    bindsym b exec --no-startup-id calibre, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (s)uspend, (u)ser, (r)eboot, (e)xit
+mode "$mode_system" {
+    bindsym l exec --no-startup-id betterlockscreen -l dimblur, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym u exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym e exec --no-startup-id systemctl poweroff, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Screenshot shortcuts
+bindsym Print exec --no-startup-id scrot '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Print exec --no-startup-id scrot -u '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Ctrl+Print exec --no-startup-id scrot -s '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/'
+
+bindsym $mod+r mode "resize"
+mode "resize" {
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F8F8F2
+
+bar {
+    status_command i3blocks
+    position top
+    workspace_min_width 24
+    strip_workspace_numbers yes
+
+    #mode hide
+    font pango:$the_font 8
+    separator_symbol "::"
+    colors {
+        background #282A36
+            statusline #F8F8F2
+            separator  #44475A
+
+            focused_workspace  #44475A #44475A #F8F8F2
+            active_workspace   #282A36 #44475A #F8F8F2
+            inactive_workspace #282A36 #282A36 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+    }
+}
+
+# assign [class="(?i)LocalSend"] $ws8
+# for_window [class="firefox"] move to workspace $ws0
+# exec --no-startup-id i3-msg 'workspace 9:editor; exec vim'
+#set $ws1 '1: <icon> Term'
+
+# Autostart applications
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id nm-applet
+exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id udiskie -t
+exec_always feh --bg-fill /path/to/wallpaper/*.jpg
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+# System function keys
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86Display exec --no-startup-id arandr
+
+exec_always xrandr --output V --mode 1920x1080
+exec_always picom -f

@@ -1,0 +1,19 @@
+
+# Header: <type>(<scope>):<subject> | 01. :sparkles:          (火花)        新功能
+#                                   | 02. :bug:               (bug)         修复bug
+#   type: 提交类型                  | 03. :fire:              (火焰)        移除代码/文件
+#     - feat     新增功能           | 04. :art:               (调色板)      改进代码
+#     - fix      修复BUG            | 05. :lipstick:          (口红)        UI/样式
+#     - docs     文档更新           | 06. :memo:              (备忘录)      文档
+#     - style    代码格式调整       | 07. :white_check_mark:  (白色复选框)  更新测试
+#     - refactor 重构代码           | 08. :rocket:            (火箭)        部署
+#     - test     添加或修改测试用例 | 09. :lock:              (锁)          问题修复(安全
+#     - chore    杂项修改           | 10. :arrow_up:          (上升箭头)    升级依赖
+#   scope: 可选，指明影响范围       | 11. :arror_down:        (下降箭头)    降级依赖
+#   subject: 对提交的简短描述       | 12. :construction:      (施工)        工作进行中
+#                                   | 13. :recycle:           (循环箭头)    重构
+# Body: 详细描述本次提交的内容和原因| 14. :tada:              (庆祝)        初始化
+#                                   | 15. :bookmark:          (书签)        发行/版本标签
+# Footer: 仅用两种情况              | 17. :wrench:            (扳手)        配置文件
+#   - BREAKING CHANGE: 不兼容变动   | 19. :whale:             (鲸鱼)        Docker
+#   - ISSUES CLOSED:   关闭ISSUE    | 20. :ambulance:         (急救车)      重要补丁
