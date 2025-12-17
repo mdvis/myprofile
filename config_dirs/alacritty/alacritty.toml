@@ -1,6 +1,9 @@
 [general]
 working_directory = "Code"
 
+[window]
+startup_mode = "Maximized"
+
 [font.normal]
 family = "SMS"
 style = "Regular"
