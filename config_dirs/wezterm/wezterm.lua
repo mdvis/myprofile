@@ -9,7 +9,7 @@ return {
         stretch = "Normal",
         style = "Normal",
     }),
-    font_size = 14.0,
+    font_size = 16.0,
 
     default_prog = {
         "/opt/homebrew/bin/tmux",
@@ -27,8 +27,8 @@ return {
 
     default_cursor_style = "BlinkingBlock",
 
-    initial_cols = 120,
-    initial_rows = 28,
+    initial_cols = 200,
+    initial_rows = 200,
 
     enable_tab_bar = false,
 }
