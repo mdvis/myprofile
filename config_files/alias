@@ -18,7 +18,6 @@
 
     alias sp="export ALL_PROXY=$PROXY_SOCKET; export HTTP_PROXY=$PROXY_HTTP; export HTTPS_PROXY=$PROXY_HTTP"
     alias un="unset ALL_PROXY; unset HTTP_PROXY; unset HTTPS_PROXY;"
-    sp
 # }
 
 # Git {
