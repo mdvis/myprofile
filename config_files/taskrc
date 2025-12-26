@@ -1,0 +1,52 @@
+############ 基础 ############
+data.location=~/.task
+confirmation=no
+default.command=next
+weekstart=monday
+dateformat=Y-M-D
+search.case.sensitive=no
+
+############ 颜色 ############
+color.pri.H=bold red
+color.pri.M=yellow
+color.pri.L=green
+color.overdue=bold red
+color.due=cyan
+color.active=bold
+
+############ UDA ############
+uda.context.type=string
+uda.context.label=Context
+
+############ Alias ############
+alias.a=add
+alias.n=next
+alias.t=today
+alias.p=projects
+alias.s=start
+alias.d=done
+alias.w=waiting
+
+############ Report：下一步 ############
+report.next.description=Next actions
+report.next.columns=id,project,priority,description,due
+report.next.sort=project+,priority-,due+
+report.next.filter=status:pending and +READY
+
+############ Report：今日 ############
+report.today.description=Due today
+report.today.columns=id,project,priority,description
+report.today.filter=status:pending and due<=today
+report.today.sort=priority-,due+
+
+############ Report：等待中 ############
+report.waiting.description=Waiting tasks
+report.waiting.columns=id,project,description
+report.waiting.filter=status:pending and +WAIT
+report.waiting.sort=project+
+
+############ Report：进行中 ############
+report.active.description=Active
+report.active.columns=id,project,description,start
+report.active.filter=status:pending and start.any:
+news.version=3.4.2
