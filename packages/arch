@@ -22,6 +22,7 @@ docker
 docker-buildx
 docker-compose
 doublecmd-qt6
+drawio-desktop
 espeak-ng
 fcitx5
 fcitx5-chinese-addons
@@ -118,6 +119,7 @@ vlc
 vls
 vokoscreen
 waybar
+wine
 wireshark
 wl-clipboard
 xdg-desktop-portal-gtk
