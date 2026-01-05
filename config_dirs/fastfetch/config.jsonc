@@ -58,11 +58,11 @@
       "type": "disk",
       "keyColor": "35",
     },
+    "break",
     {
       "type": "localip",
       "keyColor": "36",
     },
-    "break",
     {
       "type": "terminal",
       "keyColor": "31",
