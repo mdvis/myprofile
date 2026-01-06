@@ -34,7 +34,7 @@
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
-[includeIf "gitdir:~/Code/work/"]
+[includeIf "gitdir:~/Code/"]
     path = ~/.gitconfig_work
 [includeIf "gitdir:~/Notes/"]
     path = ~/.gitconfig_notes
