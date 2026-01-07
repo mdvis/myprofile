@@ -29,7 +29,8 @@ alias.w=waiting
 
 ############ Report：下一步 ############
 report.next.description=Next actions
-report.next.columns=id,project,priority,description,due
+# report.next.columns=id,project,priority,description,due
+# report.next.labels=id,project,priority,description,due
 report.next.sort=project+,priority-,due+
 report.next.filter=status:pending and +READY
 
