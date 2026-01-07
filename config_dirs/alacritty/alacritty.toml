@@ -3,6 +3,7 @@ working_directory = "Code"
 
 [window]
 startup_mode = "Maximized"
+opacity = 0.85
 
 [font.normal]
 family = "SMS"
