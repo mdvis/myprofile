@@ -39,4 +39,6 @@
 
     alias lzg="lazygit"
     alias lzd="lazydocker"
+
+    alias tasku="taskwarrior-tui"
 # }
