@@ -70,3 +70,5 @@ eval "$(atuin init zsh)"
 eval "$(mise activate zsh)"
 eval "$(thefuck --alias)"
 # other tools end
+
+export PATH="${HOME}/.myprofile/nix/result/bin:$PATH"
