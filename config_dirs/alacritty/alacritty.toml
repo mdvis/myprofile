@@ -1,5 +1,5 @@
-[general]
-working_directory = "Code"
+# [general]
+# working_directory = "Code"
 
 [window]
 startup_mode = "Maximized"
