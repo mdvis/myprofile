@@ -138,6 +138,7 @@ cd "$APP_PATH" || exit
 
 command -v pacman &>/dev/null && . "${APP_PATH}/setup-arch.sh"
 command -v yay &>/dev/null && . "${APP_PATH}/setup-aur.sh"
+command -v apt &>/dev/null && . "${APP_PATH}/setup-apt.sh"
 
 install_fonts
 
