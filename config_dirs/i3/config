@@ -37,7 +37,7 @@ focus_wrapping yes
 mouse_warping output
 popup_during_fullscreen smart
 
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec konsole
 bindsym $mod+Shift+Return exec --no-startup-id foot --app_id=dropdown
 
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -111,7 +111,7 @@ set $mode_application (t)hunar, (f)irefox, (w)ehat, (c)lash, (o)ffice, (b)ooks
 mode "$mode_application" {
     bindsym t exec --no-startup-id thunar, mode "default"
     bindsym f exec --no-startup-id firefox, mode "default"
-    bindsym w exec --no-startup-id wechat, mode "default"
+    bindsym w exec --no-startup-id wechat-uos, mode "default"
     bindsym c exec --no-startup-id flclash, mode "default"
     bindsym o exec --no-startup-id wps, mode "default"
     bindsym b exec --no-startup-id calibre, mode "default"
@@ -179,7 +179,7 @@ bar {
 
     #mode hide
     font pango:$the_font 8
-    separator_symbol "::"
+    # separator_symbol ":"
     colors {
         background #282A36
             statusline #F8F8F2
