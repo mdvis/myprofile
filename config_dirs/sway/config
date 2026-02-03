@@ -4,7 +4,7 @@ set $mod Mod4
 set $menu_s anyrun
 set $menu bemenu-run
 set $font pango:SMS 14
-set $term alacritty
+set $term konsole
 set $thunder foot --app-id=dropdown
 set $file thunar
 set $browser firefox
@@ -193,14 +193,14 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 # effects
-corner_radius 8
-shadows enable
-shadows_on_csd enable
-blur enable
-blur_radius 12
-blur_passes 3
+# corner_radius 8
+# shadows enable
+# shadows_on_csd enable
+# blur enable
+# blur_radius 12
+# blur_passes 3
 
-layer_effects "waybar" blur enable & shadows enable
+# layer_effects "waybar" blur enable & shadows enable
 
 # startup
 exec swaybg --image $wallpaper --mode fill
@@ -223,11 +223,11 @@ assign [app_id="localsend_app"] $ws8
 assign [class="(?i)localsend"] $ws8
 # for_window [class=".*"] border pixel 2
 
-exec swaymsg "workspace 9:clash; exec $clash"
-exec swaymsg "workspace 8:editor; exec $term -e $editor"
+# exec swaymsg "workspace 9:clash; exec $clash"
+# exec swaymsg "workspace 8:editor; exec $term -e $editor"
 
-set $ws1 '9:󰄛  clash'
-set $ws1 '8:  vim'
+# set $ws1 '9:󰄛  clash'
+# set $ws1 '8:  vim'
 
 # audio
 # volume_step 5
