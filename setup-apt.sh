@@ -9,8 +9,8 @@
 APP_NAME="myprofile"
 APP_PATH="${HOME}/.${APP_NAME}"
 
-echo "------------ dnf start ------------"
+echo "------------ apt start ------------"
 while read -r app; do
     sudo apt install -y "$app"
 done <"$APP_PATH"/packages/apt
-echo "------------  dnf end  ------------"
+echo "------------  apt end  ------------"

@@ -101,7 +101,7 @@ tmux
 tomboy-ng
 uncrustify
 universal-ctags
-vim
+vim-nox
 vlc
 vokoscreen
 waybar
