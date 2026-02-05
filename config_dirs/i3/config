@@ -37,7 +37,7 @@ focus_wrapping yes
 mouse_warping output
 popup_during_fullscreen smart
 
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec --no-startup-id foot --app_id=dropdown
 
 bindsym $mod+d exec --no-startup-id rofi -show drun
