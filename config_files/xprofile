@@ -3,6 +3,7 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
 fcitx5 &
+tilda &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
