@@ -47,7 +47,6 @@ golang
 goldendict-ng
 graphicsmagick
 grim
-guake
 hdparm
 highlight
 httpie
@@ -97,6 +96,7 @@ syncthing
 thefuck
 thunar
 thunderbird
+tilda
 timeshift
 tmux
 tomboy-ng
