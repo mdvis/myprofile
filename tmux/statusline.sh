@@ -3,7 +3,7 @@
 TMUX_POWERLINE_DIR_HOME=$(dirname "$0")
 TMUX_POWERLINE_DIR_SEGMENTS="${TMUX_POWERLINE_DIR_HOME}/segements"
 left=(hostname lanip wanip)
-right=(session)
+right=(session time)
 output=""
 if [[ "left" = "$1" ]]; then
     for segement in "${left[@]}"; do
