@@ -107,3 +107,6 @@ _zb_path_append() {
 
 _zb_path_append "$ZEROBREW_BIN"
 _zb_path_append "$ZEROBREW_PREFIX/bin"
+
+# opencode
+export PATH=/Users/mdvis/.opencode/bin:$PATH
