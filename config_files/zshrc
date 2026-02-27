@@ -14,10 +14,9 @@ export LC_MONETARY="zh_CN.UTF-8"
 
 export PATH="${HOME}/.local/bin:$PATH"
 
-export PATH="${HOME}/.local/share/mise/installs/node/24.5.0/bin:$PATH"
-
 [[ -f ~/.alias ]] && . ~/.alias
 [[ -f ~/.api_keys ]] && . $HOME/.api_keys
+[[ -f ~/.claude_env ]] && . $HOME/.claude_env
 # sys end
 
 # homebrew
