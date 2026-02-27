@@ -60,3 +60,5 @@
     autoSetupRemote = true
 [rerere]
     enabled = true
+[safe]
+	directory = *
