@@ -1,5 +1,4 @@
 # Profile {
-    alias l1='ls -1 -F --color'
     alias la='ls -lha -F --color'
     alias ll='ls -lh -F --color'
     alias ls='ls -F --color'
@@ -39,6 +38,4 @@
 
     alias lzg="lazygit"
     alias lzd="lazydocker"
-
-    alias tasku="taskwarrior-tui"
 # }
