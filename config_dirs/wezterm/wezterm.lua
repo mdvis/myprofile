@@ -11,7 +11,7 @@ return {
     font_size = 16.0,
 
     default_prog = {
-        "/opt/homebrew/bin/tmux",
+        "/usr/local/bin/tmux",
     },
 
     window_padding = {
