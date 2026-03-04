@@ -3,12 +3,11 @@ local wezterm = require("wezterm")
 return {
     color_scheme = "Catppuccin Mocha",
 
-    font = wezterm.font({
-        family = "SMS",
-        weight = "Regular",
-        stretch = "Normal",
-        style = "Normal",
+    font = wezterm.font_with_fallback({
+        "SauceCodePro Nerd Font Mono",
+        "霞鹜文楷等宽",
     }),
+
     font_size = 16.0,
 
     default_prog = {
