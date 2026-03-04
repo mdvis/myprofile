@@ -13,7 +13,7 @@ style = "Regular"
 size = 16.0
 
 [terminal.shell]
-program = "/opt/homebrew/bin/tmux"
+program = "/usr/local/bin/tmux"
 
 [cursor.style]
 shape = "Block"
