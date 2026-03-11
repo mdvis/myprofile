@@ -109,3 +109,6 @@ _zb_path_append "$ZEROBREW_PREFIX/bin"
 
 # opencode
 export PATH=/Users/mdvis/.opencode/bin:$PATH
+
+# Added by Antigravity
+export PATH="/Users/mdvis/.antigravity/antigravity/bin:$PATH"
