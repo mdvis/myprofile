@@ -13,6 +13,7 @@ clamav
 clang-tools
 cmake
 copyq
+curl
 docker-buildx
 docker-clean
 docker-cli
