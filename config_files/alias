@@ -36,8 +36,9 @@
 
     alias gdf="git diff"
 
-    alias lzg="lazygit"
     alias lzd="lazydocker"
+    alias lzg="lazygit"
+    alias lzs="lazyssh"
 # }
 
 # { taskwarrior
