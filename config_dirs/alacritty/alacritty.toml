@@ -9,8 +9,8 @@ style = "Regular"
 [font]
 size = 16.0
 
-# [terminal.shell]
-# program = "/usr/local/bin/tmux"
+[terminal.shell]
+program = "/usr/bin/tmux"
 
 [cursor.style]
 shape = "Block"
