@@ -1,6 +1,18 @@
 export API_TIMEOUT_MS=3000000
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
+openrouter() {
+  export ANTHROPIC_AUTH_TOKEN=$OPENROUTER_KEY
+  export ANTHROPIC_BASE_URL=https://openrouter.ai/api
+  export CURRENT_MODEL=stepfun/step-3.5-flash:free
+
+  export ANTHROPIC_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_OPUS_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_SONNET_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_HAIKU_MODEL=$CURRENT_MODEL
+  export CLAUDE_CODE_SUBAGENT_MODEL=$CURRENT_MODEL
+}
+
 bailian() {
   export ANTHROPIC_AUTH_TOKEN=$BAILIAN_KEY
   export ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic
@@ -13,10 +25,10 @@ bailian() {
   export CLAUDE_CODE_SUBAGENT_MODEL=$CURRENT_MODEL
 }
 
-openrouter() {
-  export ANTHROPIC_AUTH_TOKEN=$OPENROUTER_KEY
-  export ANTHROPIC_BASE_URL=https://openrouter.ai/api
-  export CURRENT_MODEL=stepfun/step-3.5-flash:free
+longcat() {
+  export ANTHROPIC_AUTH_TOKEN=$LONGCAT_KEY
+  export ANTHROPIC_BASE_URL=https://api.longcat.chat/anthropic
+  export CURRENT_MODEL=LongCat-Flash-Thinking-2601
 
   export ANTHROPIC_MODEL=$CURRENT_MODEL
   export ANTHROPIC_DEFAULT_OPUS_MODEL=$CURRENT_MODEL
