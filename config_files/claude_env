@@ -16,7 +16,21 @@ openrouter() {
 bailian() {
   export ANTHROPIC_AUTH_TOKEN=$BAILIAN_KEY
   export ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic
-  export CURRENT_MODEL=glm-5
+  # qwen3.6-plus
+  # qwen3.6-plus-2026-04-02
+  export CURRENT_MODEL=qwen3.5-flash-2026-02-23
+
+  export ANTHROPIC_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_OPUS_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_SONNET_MODEL=$CURRENT_MODEL
+  export ANTHROPIC_DEFAULT_HAIKU_MODEL=$CURRENT_MODEL
+  export CLAUDE_CODE_SUBAGENT_MODEL=$CURRENT_MODEL
+}
+
+longcat() {
+  export ANTHROPIC_AUTH_TOKEN=$LONGCAT_KEY
+  export ANTHROPIC_BASE_URL=https://api.longcat.chat/anthropic/
+  export CURRENT_MODEL=LongCat-Flash-Chat
 
   export ANTHROPIC_MODEL=$CURRENT_MODEL
   export ANTHROPIC_DEFAULT_OPUS_MODEL=$CURRENT_MODEL
@@ -26,7 +40,7 @@ bailian() {
 }
 
 localhost() {
-  export ANTHROPIC_AUTH_TOKEN=empty
+  export ANTHROPIC_AUTH_TOKEN=EMPTY
   export ANTHROPIC_BASE_URL=localhost:12434
   export CURRENT_MODEL=huggingface.co/unsloth/qwen3.5-4b-gguf:UD-Q4_K_XL
 
