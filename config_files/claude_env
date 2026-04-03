@@ -25,4 +25,12 @@ longcat() {
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
-longcat
+localhost() {
+  export ANTHROPIC_AUTH_TOKEN=EMPTY
+  export ANTHROPIC_BASE_URL=localhost:12434
+
+  export CURRENT_MODEL=huggingface.co/unsloth/qwen3.5-4b-gguf:UD-Q4_K_XL
+  export ANTHROPIC_MODEL=$CURRENT_MODEL
+}
+
+openrouter
