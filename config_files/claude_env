@@ -5,7 +5,7 @@ openrouter() {
   export ANTHROPIC_AUTH_TOKEN=$OPENROUTER_KEY
   export ANTHROPIC_BASE_URL=https://openrouter.ai/api
 
-  export CURRENT_MODEL=qwen/qwen3.6-plus:free
+  export CURRENT_MODEL=stepfun/step-3.5-flash:free
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
