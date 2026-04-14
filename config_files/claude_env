@@ -5,23 +5,7 @@ openrouter() {
   export ANTHROPIC_AUTH_TOKEN=$OPENROUTER_KEY
   export ANTHROPIC_BASE_URL=https://openrouter.ai/api
 
-  export CURRENT_MODEL=nvidia/nemotron-3-super-120b-a12b:free
-  export ANTHROPIC_MODEL=$CURRENT_MODEL
-}
-
-bailian() {
-  export ANTHROPIC_AUTH_TOKEN=$BAILIAN_KEY
-  export ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/apps/anthropic
-
-  export CURRENT_MODEL=qwen3.6-plus
-  export ANTHROPIC_MODEL=$CURRENT_MODEL
-}
-
-longcat() {
-  export ANTHROPIC_AUTH_TOKEN=$LONGCAT_KEY
-  export ANTHROPIC_BASE_URL=https://api.longcat.chat/anthropic/
-
-  export CURRENT_MODEL=LongCat-Flash-Thinking
+  export CURRENT_MODEL=minimax/minimax-m2.5:free
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
