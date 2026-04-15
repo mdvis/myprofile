@@ -9,4 +9,12 @@ openrouter() {
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
+localhost() {
+  export ANTHROPIC_AUTH_TOKEN=EMPTY
+  export ANTHROPIC_BASE_URL=localhost:11434
+
+  export CURRENT_MODEL=qwen3.5:4b
+  export ANTHROPIC_MODEL=$CURRENT_MODEL
+}
+
 openrouter
