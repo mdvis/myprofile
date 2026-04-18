@@ -2,3 +2,4 @@
 .DS_Store
 .sync.ffs_db
 nix/result
+**/watch_later
