@@ -24,39 +24,14 @@ export PATH="${HOME}/.local/bin:$PATH"
 # sys end
 
 # homebrew
-# export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
-export HOMEBREW_NO_INSTALL_CLEANUP=1
-export HOMEBREW_NO_ENV_HINTS=1
-
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # homebrew end
-
-# go
-export PATH="${HOME}/go/bin:$PATH"
-export GO111MODULE=on
-# go end
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd -H -t f -t d --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build}"
 export FZF_DEFAULT_OPTS="--height 40% --border --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -50'"
 # fzf end
-
-# rust
-export PATH="${HOME}/.cargo/bin:$PATH"
-# rust end
-
-# husky
-export HUSKY=0 # Disables all Git hooks
-# husky end
-
-# pnpm
-export PNPM_HOME="/Users/mdvis/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # antigen
 source "$HOME/.antigen.zsh"
@@ -72,10 +47,9 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(mise activate zsh)"
+
+# husky
+export HUSKY=0 # Disables all Git hooks
+# husky end
+
 # other tools end
-
-# opencode
-export PATH=/Users/mdvis/.opencode/bin:$PATH
-
-# Added by Antigravity
-export PATH="/Users/mdvis/.antigravity/antigravity/bin:$PATH"
