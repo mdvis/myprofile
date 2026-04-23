@@ -17,4 +17,4 @@ localhost() {
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
-openrouter
+localhost
