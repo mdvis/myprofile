@@ -5,7 +5,7 @@ openrouter() {
   export ANTHROPIC_AUTH_TOKEN=$OPENROUTER_KEY
   export ANTHROPIC_BASE_URL=https://openrouter.ai/api
 
-  export CURRENT_MODEL=minimax/minimax-m2.5:free
+  export CURRENT_MODEL=tencent/hy3-preview:free
   export ANTHROPIC_MODEL=$CURRENT_MODEL
 }
 
